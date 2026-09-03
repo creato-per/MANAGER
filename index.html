@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Manager - GitHub Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h1>FOOTBALL MANAGER</h1>
+        <p class="subtitle">Gerencie, negocie e leve seu time à glória.</p>
+
+        <div class="menu-buttons">
+            <button class="btn primary" onclick="iniciarNovoJogo()">Iniciar Novo Jogo</button>
+            <button class="btn secondary" onclick="continuarJogo()">Continuar Jogo</button>
+            
+            <!-- Slot de Save (Upload de arquivo) -->
+            <label class="btn upload" for="input-save">
+                Slot Save (Carregar Arquivo)
+            </label>
+            <input type="file" id="input-save" accept=".json" style="display: none;" onchange="carregarArquivoSave(event)">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
