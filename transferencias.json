@@ -21,6 +21,27 @@
       "valor": 12000000,
       "agencia": "Elite Talent Agency",
       "ultimo_clube": "São Paulo FC"
+    },    {
+      "jogador": "Matheus Pereira",
+      "idade": 22,
+      "velocidade": 78,
+      "forca": 70,
+      "tecnica": 82,
+      "salario": 150000,
+      "valor": 8500000,
+      "agencia": "Star Sports Management",
+      "ultimo_clube": "Guarani"
+    },
+    {
+      "jogador": "Lucas 'Paredão' Silva",
+      "idade": 25,
+      "velocidade": 60,
+      "forca": 85,
+      "tecnica": 75,
+      "salario": 200000,
+      "valor": 12000000,
+      "agencia": "Elite Talent Agency",
+      "ultimo_clube": "São Paulo FC"
     }
   ]
 }
