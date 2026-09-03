@@ -1,0 +1,13 @@
+{
+  "gerador_base": {
+    "nomes": ["Lucas", "Matheus", "Gabriel", "Thiago", "Bruno"],
+    "sobrenomes": ["Silva", "Santos", "Oliveira", "Souza", "Pereira", "Costa", "Ferreira", "Almeida", "Rodrigues", "Lima"],
+    "regras_geracao": {
+      "idade_min": 14,
+      "idade_max": 18,
+      "forca_opcoes": ["idade + 3", "idade + 2", "idade + 1"],
+      "velocidade_opcoes": ["2 * idade + 10%", "2 * idade + 5%", "2 * idade - 50%"],
+      "tecnica_fixa": 30
+    }
+  }
+}
