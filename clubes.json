@@ -9,12 +9,77 @@
     {
       "nome": "São Paulo FC",
       "divisao": 1,
+      "velocidade": 80,
+      "forca": 88,
+      "tecnica": 60
+    },
+    {
+      "nome": "FLAMENGO",
+      "divisao": 1,
+      "velocidade": 85,
+      "forca": 90,
+      "tecnica": 82
+    },{
+      "nome": "PALMEIRAS",
+      "divisao": 1,
+      "velocidade": 85,
+      "forca": 88,
+      "tecnica": 90
+    },
+    {
+      "nome": "Corinthians",
+      "divisao": 1,
+      "velocidade": 85,
+      "forca": 78,
+      "tecnica": 72
+    },{
+      "nome": "Botafogo",
+      "divisao": 1,
       "velocidade": 75,
       "forca": 78,
       "tecnica": 80
     },
     {
-      "nome": "Guarani",
+      "nome": "Santos",
+      "divisao": 1,
+      "velocidade": 75,
+      "forca": 68,
+      "tecnica": 82
+    },{
+      "nome": "Vasco",
+      "divisao": 1,
+      "velocidade": 75,
+      "forca": 58,
+      "tecnica": 70
+    },
+    {
+      "nome": "Cruzeiro",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 68,
+      "tecnica": 62
+    },{
+      "nome": "Bahia",
+      "divisao": 1,
+      "velocidade": 75,
+      "forca": 78,
+      "tecnica": 80
+    },
+    {
+      "nome": "Aletico",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 68,
+      "tecnica": 62
+    },{
+      "nome": "internacional",
+      "divisao": 1,
+      "velocidade": 75,
+      "forca": 78,
+      "tecnica": 80
+    },
+    {
+      "nome": "Fluminense",
       "divisao": 2,
       "velocidade": 65,
       "forca": 68,
