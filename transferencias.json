@@ -13,7 +13,7 @@
       "estado": "compra"
     },
     {
-      "jogador": "Jean Carlos",
+      "jogador": "Carlos jeano",
       "idade": 34,
       "velocidade": 60,
       "forca": 75,
@@ -47,6 +47,53 @@
       "agencia": "Josué e viviane agencia",
       "ultimo_clube": "São Paulo FC",
       "estado": "compra"
+    },    {
+      "jogador": "Matheus Romeiro",
+      "idade": 31,
+      "velocidade": 88,
+      "forca": 50,
+      "tecnica": 62,
+      "salario": 150000,
+      "valor": 0,
+      "agencia": "Star Sports",
+      "ultimo_clube": "Náutico",
+      "estado": "livre"
+    },
+    {
+      "jogador": "Jonan Carlos",
+      "idade": 33,
+      "velocidade": 60,
+      "forca": 75,
+      "tecnica": 55,
+      "salario": 140000,
+      "valor": 0,
+      "agencia": "Elite Talent",
+      "ultimo_clube": "Sport",
+      "estado": "livre"
+    },
+    {
+      "jogador": "iago Pereira",
+      "idade": 24,
+      "velocidade": 78,
+      "forca": 70,
+      "tecnica": 82,
+      "salario": 150000,
+      "valor": 8500000,
+      "agencia": "Sports Management",
+      "ultimo_clube": "Guarani",
+      "estado": "livre"
+    },
+    {
+      "jogador": "Matheus Silva",
+      "idade": 25,
+      "velocidade": 20,
+      "forca": 65,
+      "tecnica": 85,
+      "salario": 900000,
+      "valor": 0,
+      "agencia": "Josué e viviane agencia",
+      "ultimo_clube": "Náutico",
+      "estado": "livre"
     }
   ]
 }
