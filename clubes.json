@@ -54,7 +54,7 @@
     },
     {
       "nome": "Cruzeiro",
-      "divisao": 2,
+      "divisao": 1,
       "velocidade": 65,
       "forca": 68,
       "tecnica": 62
@@ -67,7 +67,7 @@
     },
     {
       "nome": "Aletico",
-      "divisao": 2,
+      "divisao": 1,
       "velocidade": 65,
       "forca": 68,
       "tecnica": 62
@@ -80,6 +80,85 @@
     },
     {
       "nome": "Fluminense",
+      "divisao": 1,
+      "velocidade": 65,
+      "forca": 68,
+      "tecnica": 62
+    },
+    {
+      "nome": "Sport",
+      "divisao": 2,
+      "velocidade": 70,
+      "forca": 78,
+      "tecnica": 50
+    },
+    {
+      "nome": "Nautico",
+      "divisao": 2,
+      "velocidade": 55,
+      "forca": 80,
+      "tecnica": 52
+    },{
+      "nome": "Chapecoense",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 58,
+      "tecnica": 70
+    },
+    {
+      "nome": "Remo",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 58,
+      "tecnica": 52
+    },{
+      "nome": "Botafogo sp",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 68,
+      "tecnica": 40
+    },
+    {
+      "nome": "vila nova",
+      "divisao": 1,
+      "velocidade": 55,
+      "forca": 68,
+      "tecnica": 62
+    },{
+      "nome": "Gremio",
+      "divisao": 2,
+      "velocidade": 75,
+      "forca": 58,
+      "tecnica": 70
+    },
+    {
+      "nome": "Juventude",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 68,
+      "tecnica": 62
+    },{
+      "nome": "vitória",
+      "divisao": 2,
+      "velocidade": 75,
+      "forca": 78,
+      "tecnica": 80
+    },
+    {
+      "nome": "Fortaleza",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 68,
+      "tecnica": 62
+    },{
+      "nome": "Novorizontino",
+      "divisao": 2,
+      "velocidade": 75,
+      "forca": 78,
+      "tecnica": 80
+    },
+    {
+      "nome": "mirassol",
       "divisao": 2,
       "velocidade": 65,
       "forca": 68,
