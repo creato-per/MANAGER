@@ -1,0 +1,52 @@
+{
+  "gerador_elenco": {
+    "tamanho_elenco": 16,
+    "nomes": [
+      "Carlos",
+      "Bruno",
+      "Marcos",
+      "Rafael",
+      "Diego",
+      "Alexandre",
+      "Rodrigo",
+      "Vinicius",
+      "Eduardo",
+      "Felipe"
+    ],
+    "sobrenomes": [
+      "Silva",
+      "Santos",
+      "Oliveira",
+      "Souza",
+      "Pereira",
+      "Costa",
+      "Ferreira",
+      "Almeida",
+      "Rodrigues",
+      "Lima",
+      "Gomes",
+      "Martins",
+      "Araujo",
+      "Barbosa",
+      "Ribeiro"
+    ],
+    "faixas_atributos": {
+      "idade": {
+        "min": 20,
+        "max": 46
+      },
+      "velocidade": {
+        "min": 30,
+        "max": 45
+      },
+      "forca": {
+        "min": 15,
+        "max": 35
+      },
+      "tecnica": {
+        "min": 55,
+        "max": 70
+      }
+    }
+  }
+}
