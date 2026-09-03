@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Manager - Hub Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hub-container">
+        <header class="hub-header">
+            <div>
+                <h2 id="time-nome">Carregando...</h2>
+                <p id="manager-info">Treinador: Manager</p>
+            </div>
+            <div class="caixa-info">
+                <span>Caixa:</span> <strong id="valor-caixa">R$ 0</strong>
+            </div>
+        </header>
+
+        <div class="hub-menu">
+            <button class="hub-btn" onclick="abrirTela('time')">
+                <span class="icon">🛡️</span>
+                <h3>1. Time</h3>
+                <p>Formação e seleção de jogadores</p>
+            </button>
+
+            <button class="hub-btn" onclick="abrirTela('financeiro')">
+                <span class="icon">💰</span>
+                <h3>2. Financeiro</h3>
+                <p>Investimentos, empréstimos e cotas</p>
+            </button>
+
+            <button class="hub-btn highlight" onclick="abrirTela('jogo')">
+                <span class="icon">⚽</span>
+                <h3>3. Ir ao Jogo</h3>
+                <p>Partida tática (Bolinhas azuis x vermelhas)</p>
+            </button>
+
+            <button class="hub-btn" onclick="abrirTela('mercado')">
+                <span class="icon">🤝</span>
+                <h3>4. Mercado</h3>
+                <p>Contratar, vender e agências</p>
+            </button>
+
+            <button class="hub-btn" onclick="abrirTela('base')">
+                <span class="icon">🌟</span>
+                <h3>5. Categoria de Base</h3>
+                <p>Gerenciar jovens talentos</p>
+            </button>
+        </div>
+
+        <div class="hub-footer">
+            <button class="btn secondary" onclick="baixarArquivoSave()">Baixar Save Atual</button>
+            <button class="btn danger" onclick="voltarMenu()">Sair para o Menu</button>
+        </div>
+    </div>
+
+    <script>
+        // Carrega os dados do jogo salvos no navegador ao abrir o Hub
+        let dadosJogo = JSON.parse(localStorage.getItem('save_manager'));
+
+        if (!dadosJogo) {
+            alert("Nenhum save encontrado! Redirecionando para o menu.");
+            window.location.href = "index.html";
+        } else {
+            document.getElementById('time-nome').innerText = dadosJogo.timeAtual.nome;
+            document.getElementById('manager-info').innerText = `Treinador: ${dadosJogo.treinador}`;
+            document.getElementById('valor-caixa').innerText = Number(dadosJogo.financeiro.caixa).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+
+        function abrirTela(secao) {
+            alert(`Abrindo a tela de: ${secao.toUpperCase()}. (Em breve vamos montar a interface desta seção!)`);
+        }
+
+        function voltarMenu() {
+            window.location.href = "index.html";
+        }
+
+        function baixarArquivoSave() {
+            const dadosEmJson = JSON.stringify(dadosJogo, null, 2);
+            const blob = new Blob([dadosEmJson], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = `save_${dadosJogo.timeAtual.nome.toLowerCase().replace(/\s+/g, '_')}_${Date.now()}.json`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
