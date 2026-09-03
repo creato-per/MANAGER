@@ -1,0 +1,113 @@
+// Configuração dos geradores definidos nas etapas anteriores
+const configGeradorElenco = {
+    nomes: ["Carlos", "Bruno", "Marcos", "Rafael", "Diego", "Alexandre", "Rodrigo", "Vinicius", "Eduardo", "Felipe"],
+    sobrenomes: ["Silva", "Santos", "Oliveira", "Souza", "Pereira", "Costa", "Ferreira", "Almeida", "Rodrigues", "Lima", "Gomes", "Martins", "Araujo", "Barbosa", "Ribeiro"],
+    idade: { min: 20, max: 46 },
+    velocidade: { min: 30, max: 45 },
+    forca: { min: 15, max: 35 },
+    tecnica: { min: 55, max: 70 }
+};
+
+const configGeradorBase = {
+    nomes: ["Lucas", "Matheus", "Gabriel", "Thiago", "Bruno"],
+    sobrenomes: ["Silva", "Santos", "Oliveira", "Souza", "Pereira", "Costa", "Ferreira", "Almeida", "Rodrigues", "Lima"],
+    idade: { min: 14, max: 18 }
+};
+
+function numeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function gerarElencoInicial() {
+    let elenco = [];
+    for (let i = 0; i < 16; i++) {
+        let nomeAleatorio = configGeradorElenco.nomes[Math.floor(Math.random() * configGeradorElenco.nomes.length)];
+        let sobrenomeAleatorio = configGeradorElenco.sobrenomes[Math.floor(Math.random() * configGeradorElenco.sobrenomes.length)];
+        let idade = numeroAleatorio(configGeradorElenco.idade.min, configGeradorElenco.idade.max);
+        let velocidade = numeroAleatorio(configGeradorElenco.velocidade.min, configGeradorElenco.velocidade.max);
+        let forca = numeroAleatorio(configGeradorElenco.forca.min, configGeradorElenco.forca.max);
+        let tecnica = numeroAleatorio(configGeradorElenco.tecnica.min, configGeradorElenco.tecnica.max);
+
+        elenco.push({
+            jogador: `${nomeAleatorio} ${sobrenomeAleatorio}`,
+            idade: idade,
+            velocidade: velocidade,
+            forca: forca,
+            tecnica: tecnica,
+            salario: 50000,
+            valor: 1000000,
+            agencia: "Base",
+            ultimo_clube: "Time X",
+            estado: "disponivel"
+        });
+    }
+    return elenco;
+}
+
+// Estrutura padrão de um novo jogo
+let jogoDados = {
+    treinador: "Manager",
+    timeAtual: {
+        nome: "Time X",
+        divisao: 1,
+        velocidade: 70,
+        forca: 70,
+        tecnica: 70
+    },
+    financeiro: {
+        caixa: 15000000,
+        emprestimos: 0,
+        patrociniosMensais: 500000
+    },
+    agenciasAmigas: [], 
+    elenco: [],
+    base: []
+};
+
+function iniciarNovoJogo() {
+    jogoDados.elenco = gerarElencoInicial();
+    localStorage.setItem('save_manager', JSON.stringify(jogoDados));
+    alert("Novo jogo iniciado com sucesso! Elenco gerado.");
+    baixarArquivoSave(); // Opcional: já força o download do primeiro save limpo
+}
+
+function continuarJogo() {
+    const saveSalvo = localStorage.getItem('save_manager');
+    if (!saveSalvo) {
+        alert("Nenhum save encontrado no navegador!");
+        return;
+    }
+    jogoDados = JSON.parse(saveSalvo);
+    alert(`Bem-vindo de volta, ${jogoDados.treinador}! Dados carregados do navegador.`);
+}
+
+function carregarArquivoSave(event) {
+    const arquivo = event.target.files[0];
+    if (!arquivo) return;
+
+    const leitor = new FileReader();
+    leitor.onload = function(e) {
+        try {
+            jogoDados = JSON.parse(e.target.result);
+            localStorage.setItem('save_manager', JSON.stringify(jogoDados));
+            alert("Arquivo de save externo carregado com sucesso!");
+        } catch (erro) {
+            alert("Erro ao ler o arquivo de save. O arquivo pode estar corrompido.");
+        }
+    };
+    leitor.readAsText(arquivo);
+}
+
+function baixarArquivoSave() {
+    const dadosEmJson = JSON.stringify(jogoDados, null, 2);
+    const blob = new Blob([dadosEmJson], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `save_${jogoDados.timeAtual.nome.toLowerCase().replace(/\s+/g, '_')}_${Date.now()}.json`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+}
