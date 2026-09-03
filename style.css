@@ -14,6 +14,7 @@ body {
     height: 100vh;
 }
 
+/* Estilos do Menu Inicial (index.html) */
 .menu-container {
     text-align: center;
     background: #1e293b;
@@ -74,3 +75,100 @@ h1 {
     color: white;
 }
 .btn.upload:hover { background-color: #475569; }
+
+.btn.danger {
+    background-color: #ef4444;
+    color: white;
+}
+.btn.danger:hover { background-color: #dc2626; }
+
+/* Estilos do Hub Principal (hub.html) */
+.hub-container {
+    width: 90%;
+    max-width: 800px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 15px;
+}
+
+.hub-header h2 {
+    color: #38bdf8;
+    font-size: 1.5rem;
+}
+
+.hub-header p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.caixa-info {
+    background: #0f172a;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #22c55e;
+}
+
+.hub-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.hub-btn {
+    background: #0f172a;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hub-btn:hover {
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+    background: #1e293b;
+}
+
+.hub-btn.highlight {
+    border-color: #22c55e;
+    background: rgba(34, 197, 94, 0.05);
+}
+
+.hub-btn .icon {
+    font-size: 1.5rem;
+}
+
+.hub-btn h3 {
+    font-size: 1.1rem;
+    color: #f8fafc;
+}
+
+.hub-btn p {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.hub-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #334155;
+    padding-top: 15px;
+}
