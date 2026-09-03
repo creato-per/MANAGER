@@ -1,0 +1,24 @@
+{
+  "divisoes": {
+    "serie_a": 12,
+    "serie_b": 12,
+    "serie_c": 12,
+    "serie_d": 12
+  },
+  "clubes": [
+    {
+      "nome": "São Paulo FC",
+      "divisao": 1,
+      "velocidade": 75,
+      "forca": 78,
+      "tecnica": 80
+    },
+    {
+      "nome": "Guarani",
+      "divisao": 2,
+      "velocidade": 65,
+      "forca": 68,
+      "tecnica": 62
+    }
+  ]
+}
