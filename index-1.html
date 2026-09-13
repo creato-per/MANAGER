@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Political Simulator</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Arial,sans-serif;background:#0d1117;color:#eee}
+main{max-width:900px;margin:auto;padding:25px}
+.box{background:#161b22;border:1px solid #30363d;border-radius:14px;padding:22px;margin:15px 0}
+h1{margin:0 0 8px;text-align:center}
+h2{margin-top:0}
+p{color:#9da7b3}
+button{width:100%;padding:15px;margin:8px 0;border:0;border-radius:8px;font-weight:bold;font-size:15px;cursor:pointer}
+.primary{background:#fff;color:#111}
+.secondary{background:#30363d;color:#fff}
+#resultado{display:none}
+.card{background:#0d1117;border:1px solid #30363d;border-radius:10px;padding:15px;margin:10px 0}
+.row{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid #30363d;padding:9px 0}
+.badge{display:inline-block;padding:5px 8px;border-radius:6px;background:#30363d;font-size:12px}
+.big{font-size:25px;font-weight:bold}
+.muted{font-size:13px;color:#8b949e}
+.erro{color:#ff7b72}
+</style>
+</head>
+
+<body>
+<main>
+<div class="box">
+    <h1>POLITICAL SIMULATOR</h1>
+    <p style="text-align:center">Painel principal do mundo simulado</p>
+
+    <button class="primary" onclick="irParaLicitante()">IR PARA LICITANTE</button>
+    <button class="secondary" onclick="simularVotacao()">SIMULAR VOTAÇÃO</button>
+</div>
+
+<div class="box" id="resultado">
+    <h2>📊 Votação neste momento</h2>
+    <p id="resumo"></p>
+    <div id="ranking"></div>
+    <div class="card">
+        <b>Como a simulação funciona</b>
+        <p class="muted">
+        Os interesses de jovens, adultos e idosos de cada cidade são comparados
+        com as ações registradas nas campanhas. O resultado representa a intenção
+        de voto no estado atual do mundo, antes de uma eleição real.
+        </p>
+    </div>
+</div>
+</main>
+
+<script>
+function irParaLicitante(){
+    window.location.href="Licitante.html";
+}
+
+async function carregarJSON(nome){
+    const resposta=await fetch(nome);
+    if(!resposta.ok) throw new Error(nome+" não encontrado.");
+    return await resposta.json();
+}
+
+function normalizarObjetivo(obj){
+    return String(obj||"").trim().toLowerCase();
+}
+
+function pontuarGrupo(interesses, candidatoMatricula, cidade, campanhas){
+    let pontos=0;
+
+    const acoes=campanhas.filter(c =>
+        String(c.candidato)===String(candidatoMatricula) &&
+        String(c.cidade).toLowerCase()===String(cidade).toLowerCase()
+    );
+
+    interesses.forEach(interesse=>{
+        const alvo=normalizarObjetivo(interesse);
+        acoes.forEach(acao=>{
+            (acao.objetivos||[]).forEach(obj=>{
+                const o=normalizarObjetivo(obj);
+                if(o===alvo) pontos+=1;
+                if(o===("-"+alvo.replace(/^[-+]/,""))) pontos-=1;
+            });
+        });
+    });
+
+    return pontos;
+}
+
+async function simularVotacao(){
+    const resultado=document.getElementById("resultado");
+    const resumo=document.getElementById("resumo");
+    const ranking=document.getElementById("ranking");
+
+    resultado.style.display="block";
+    resumo.textContent="Calculando...";
+    ranking.innerHTML="";
+
+    try{
+        const [estados,registro,campanhas]=await Promise.all([
+            carregarJSON("Estados.json"),
+            carregarJSON("Registro.json"),
+            carregarJSON("Campanha.json")
+        ]);
+
+        const pessoas=registro.registros||registro.pessoas||[];
+        const listaCampanhas=campanhas.campanhas||campanhas.registros||campanhas||[];
+
+        if(!pessoas.length){
+            throw new Error("Nenhum candidato encontrado no Registro.json.");
+        }
+
+        if(!listaCampanhas.length){
+            throw new Error("Nenhuma campanha encontrada no Campanha.json.");
+        }
+
+        const cidades=[];
+        (estados.estados||[]).forEach(estado=>{
+            (estado.cidades||[]).forEach(cidade=>{
+                cidades.push({
+                    nome:cidade.nome,
+                    estado:estado.nome,
+                    grupos:cidade.grupos||{}
+                });
+            });
+        });
+
+        const candidatos=pessoas.filter(p=>p.matricula && p.partido);
+
+        if(!candidatos.length){
+            throw new Error("Nenhum candidato com matrícula e partido foi encontrado.");
+        }
+
+        const totais={};
+
+        candidatos.forEach(c=>{
+            totais[c.matricula]={
+                nome:c.nome||c.nome_completo||c.matricula,
+                votos:0
+            };
+        });
+
+        let eleitoresConsiderados=0;
+
+        cidades.forEach(cidade=>{
+            const grupos=cidade.grupos||{};
+
+            Object.keys(grupos).forEach(nomeGrupo=>{
+                const grupo=grupos[nomeGrupo];
+                const populacao=Number(grupo.populacao||grupo.population||0);
+                const interesses=grupo.objetivos||grupo.interesses||[];
+
+                if(populacao<=0 || !interesses.length) return;
+
+                const pontos=candidatos.map(c=>({
+                    candidato:c,
+                    pontos:pontuarGrupo(interesses,c.matricula,c.nome||cidade.nome,listaCampanhas)
+                }));
+
+                const max=Math.max(...pontos.map(x=>x.pontos));
+
+                if(max<=0){
+                    eleitoresConsiderados+=populacao;
+                    return;
+                }
+
+                const vencedores=pontos.filter(x=>x.pontos===max);
+
+                vencedores.forEach(x=>{
+                    totais[x.candidato.matricula].votos+=populacao/vencedores.length;
+                });
+
+                eleitoresConsiderados+=populacao;
+            });
+        });
+
+        const lista=Object.values(totais).sort((a,b)=>b.votos-a.votos);
+        const totalVotos=lista.reduce((s,x)=>s+x.votos,0);
+
+        if(totalVotos===0){
+            resumo.innerHTML='<span class="erro">Nenhum candidato recebeu votos nesta simulação. Verifique as cidades, interesses e ações em Campanha.json.</span>';
+            return;
+        }
+
+        resumo.textContent=
+            "Intenção de voto calculada a partir do estado atual dos dados. "+
+            "Eleitores considerados: "+Math.round(eleitoresConsiderados).toLocaleString("pt-BR");
+
+        lista.forEach((c,i)=>{
+            const percentual=(c.votos/totalVotos)*100;
+            const div=document.createElement("div");
+            div.className="card";
+            div.innerHTML=
+                '<div class="row"><b>#'+(i+1)+" "+c.nome+
+                '</b><span class="badge">'+percentual.toFixed(2)+'%</span></div>'+
+                '<div class="big">'+Math.round(c.votos).toLocaleString("pt-BR")+
+                ' votos estimados</div>';
+            ranking.appendChild(div);
+        });
+
+    }catch(e){
+        resumo.innerHTML='<span class="erro">'+e.message+'</span>';
+    }
+}
+</script>
+</body>
+</html>
