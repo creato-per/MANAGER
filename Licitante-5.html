@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Licitante — Obras Federais</title>
+<style>
+*{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:0;background:#0d1117;color:#eee}
+main{max-width:900px;margin:auto;padding:24px}.box{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin:15px 0}
+h1{margin:0}h2{margin-top:0}label{display:block;margin:14px 0 6px;color:#aaa}
+select,input{width:100%;padding:12px;border-radius:7px;border:1px solid #444;background:#0d1117;color:white}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+button{width:100%;padding:13px;margin-top:18px;border:0;border-radius:7px;font-weight:bold;cursor:pointer}
+.result{display:none;margin-top:18px;padding:16px;border-radius:8px;background:#0d1117}
+.row{display:flex;justify-content:space-between;border-bottom:1px solid #333;padding:10px 0;gap:15px}
+.market{border:1px solid #30363d;border-radius:9px;padding:14px;margin:10px 0;background:#11161d}
+.market button{margin-top:10px}.selected{border:2px solid #fff}
+.letter{background:#f5f5f5;color:#111;border-radius:8px;padding:20px}
+.code{font:18px monospace;text-align:center;font-weight:bold}
+.status{padding:10px;background:#222;border-radius:7px;margin-bottom:12px}
+#mercados{display:none}.muted{color:#999;font-size:13px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<div class="box">
+<h1>LICITANTE</h1>
+<p>Elaboração de projetos de obras federais</p>
+<p class="muted">A compra utiliza exclusivamente o material <b>construção</b>. Os preços são obtidos diretamente do Mercado.json.</p>
+</div>
+
+<div class="box">
+<h2>1. Projeto da obra</h2>
+<label>Estado onde a obra será realizada</label>
+<select id="estado"><option value="">Carregando estados...</option></select>
+<label>Nome da obra</label>
+<input id="nomeObra" type="text" placeholder="Ex.: Construção da Ponte do Mississippi">
+<label>Tipo de obra</label>
+<select id="obra"></select>
+<label>Tamanho — 0 × 0 × 0</label>
+<div class="grid">
+<input id="c" type="number" min="0" step=".01" placeholder="Comprimento (m)">
+<input id="l" type="number" min="0" step=".01" placeholder="Largura (m)">
+<input id="a" type="number" min="0" step=".01" placeholder="Altura (m)">
+</div>
+<button onclick="calcular()">CALCULAR VOLUME</button>
+<div id="resultado" class="result">
+<div class="row"><b>Volume</b><b id="volume"></b></div>
+<div class="row"><span>Material</span><b>construção</b></div>
+<div class="row"><span>Quantidade necessária</span><b id="quantidade"></b></div>
+</div>
+</div>
+
+<div class="box" id="mercados">
+<h2>2. Mercados que vendem construção</h2>
+<p class="muted">O sistema cruzou o projeto com o <b>Mercado.json</b> e exibiu todos os mercados que possuem o produto <b>construcao</b>.</p>
+<div id="listaMercados"></div>
+</div>
+
+<div class="box">
+<h2>3. Contratação</h2>
+<label>Empresa que fará a obra</label>
+<input id="empresa" placeholder="Ex.: IND_003 — Lone Star Construction">
+<label>Banco responsável pela transferência</label>
+<input id="banco" placeholder="Ex.: NORTH BANK">
+<label>Órgão/Governo solicitante</label>
+<input id="governo" value="Governo Federal">
+<button onclick="gerarCarta()">GERAR CARTA PARA O SENADO</button>
+</div>
+
+<div id="saida"></div>
+</main>
+
+<script>
+const obras=[
+"Rodovia interestadual","Ferrovia federal","Penitenciária federal","Base militar",
+"Hospital do VA (veteranos)","Centro de visitantes de parque nacional","Tribunal federal",
+"Porto de entrada fronteiriço","Barragem hidrelétrica federal","Gasoduto interestadual",
+"Torre de controle de tráfego aéreo da FAA","Laboratório de pesquisa federal",
+"Centro espacial federal","Academia militar","Cemitério nacional",
+"Refúgio de vida selvagem federal","Instalação de pesquisa nuclear",
+"Armazém de reserva estratégica de petróleo","Projeto de modernização de aeroporto internacional",
+"Posto de alfândega e proteção de fronteiras","Dique de controle de enchentes federal",
+"Ponte interestadual","Eclusa de navegação","Edifício de arquivos nacionais",
+"Museu nacional","Instituição correcional federal","Muro de fronteira","Casa da moeda federal",
+"Estação da guarda costeira","Radar do serviço meteorológico nacional",
+"Armazém de ajuda humanitária federal","Campo de testes militares",
+"Complexo de laboratórios nacionais","Edifício de escritórios federal",
+"Túnel interestadual","Incubatório de peixes federal","Restauração de sítio histórico nacional",
+"Academia de treinamento federal","Pavilhão de visitantes de terras públicas",
+"Instalação de santuário marinho federal","Estação ferroviária interestadual",
+"Instalação de testes federal","Infraestrutura de telecomunicações federal",
+"Instalação de segurança nacional","Depósito logístico federal",
+"Infraestrutura portuária federal","Corredor de transmissão de energia interestadual",
+"Instalação de radiodifusão federal","Anexo de tribunal federal"];
+
+const obraSelect=document.getElementById("obra");
+obras.forEach((x,i)=>obraSelect.add(new Option(x,"OBRA_"+String(i+1).padStart(3,"0"))));
+
+let projeto=null;
+let estados=[];
+let mercados=[];
+let mercadoEscolhido=null;
+
+/* Mercado.json é a fonte oficial dos preços.
+   Estrutura esperada:
+   {
+     "mercados":[
+       {
+         "id":"MKT_001",
+         "nome":"...",
+         "estado":"...",
+         "produtos":[
+           {"produto":"construcao","preco_fabrica":12,"preco_venda":18,"imposto":1.5}
+         ]
+       }
+     ]
+   }
+*/
+async function carregarMercados(){
+  try{
+    const resposta=await fetch("Mercado.json");
+    if(!resposta.ok)throw new Error("Mercado.json não encontrado");
+    const dados=await resposta.json();
+
+    mercados=[];
+    (dados.mercados||[]).forEach(mercado=>{
+      (mercado.produtos||[]).forEach(produto=>{
+        if(String(produto.produto).toLowerCase()==="construcao"){
+          mercados.push({
+            id:mercado.id,
+            nome:mercado.nome,
+            estado:mercado.estado,
+            precoFabrica:Number(produto.preco_fabrica)||0,
+            precoVenda:Number(produto.preco_venda)||0,
+            imposto:Number(produto.imposto)||0
+          });
+        }
+      });
+    });
+  }catch(e){
+    console.error(e);
+    alert("Não foi possível carregar o Mercado.json. Coloque Licitante.html e Mercado.json na mesma pasta.");
+  }
+}
+async function carregarEstados(){
+  try{
+    const resposta=await fetch("Estados.json");
+    if(!resposta.ok)throw new Error("Estados.json não encontrado");
+    const dados=await resposta.json();
+    estados=dados.estados||[];
+    const select=document.getElementById("estado");
+    select.innerHTML="<option value=\"\">Selecione o estado</option>";
+    estados.forEach(e=>select.add(new Option(e.nome,e.nome)));
+  }catch(e){
+    console.error(e);
+    const select=document.getElementById("estado");
+    select.innerHTML="<option value=\"\">Não foi possível carregar Estados.json</option>";
+    alert("Não foi possível carregar o Estados.json. Coloque Licitante.html e Estados.json na mesma pasta.");
+  }
+}
+carregarEstados();
+carregarMercados();
+
+function dinheiro(v){return v.toLocaleString("en-US",{style:"currency",currency:"USD"});}
+function calcular(){
+  const estado=document.getElementById("estado").value;
+  if(!estado)return alert("Selecione o estado onde a obra será realizada.");
+  const c=+document.getElementById("c").value,l=+document.getElementById("l").value,a=+document.getElementById("a").value;
+  if(!(c>0&&l>0&&a>0))return alert("Preencha comprimento, largura e altura.");
+  const nomeObra=document.getElementById("nomeObra").value.trim();
+  if(!nomeObra)return alert("Digite o nome da obra.");
+  const v=c*l*a;
+  projeto={estado,nomeObra,obraId:obraSelect.value,obra:obraSelect.options[obraSelect.selectedIndex].text,c,l,a,volume:v,quantidade:v};
+  document.getElementById("resultado").style.display="block";
+  document.getElementById("volume").textContent=v.toLocaleString("pt-BR",{maximumFractionDigits:2})+" m³";
+  document.getElementById("quantidade").textContent=v.toLocaleString("pt-BR",{maximumFractionDigits:2})+" m³";
+  mostrarMercados();
+}
+function mostrarMercados(){
+  const div=document.getElementById("listaMercados");
+  div.innerHTML="";
+  mercadoEscolhido=null;
+  if(!mercados.length){
+    div.innerHTML='<p>Nenhum mercado encontrado no Mercado.json com o produto "construcao".</p>';
+  }else{
+    mercados.forEach((m,i)=>{
+      const custo=projeto.quantidade*m.precoVenda;
+      const el=document.createElement("div");
+      el.className="market";
+      el.innerHTML=
+        "<b>"+m.nome+"</b><br><span class='muted'>ID: "+m.id+" | Estado: "+m.estado+"</span>"+
+        "<div class='row'><span>Preço do mercado</span><b>"+dinheiro(m.precoVenda)+" / m³</b></div>"+
+        "<div class='row'><span>Quantidade</span><b>"+projeto.quantidade.toLocaleString("pt-BR",{maximumFractionDigits:2})+" m³</b></div>"+
+        "<div class='row'><span>Custo total da compra</span><b>"+dinheiro(custo)+"</b></div>"+
+        "<button onclick='selecionarMercado("+i+",this)'>SELECIONAR ESTE MERCADO</button>";
+      div.appendChild(el);
+    });
+  }
+  document.getElementById("mercados").style.display="block";
+}
+function selecionarMercado(i,botao){
+  mercadoEscolhido=mercados[i];
+  document.querySelectorAll(".market").forEach(x=>x.classList.remove("selected"));
+  botao.parentElement.classList.add("selected");
+  document.querySelectorAll(".market button").forEach(x=>x.textContent="SELECIONAR ESTE MERCADO");
+  botao.textContent="MERCADO SELECIONADO";
+}
+function gerarCarta(){
+  if(!projeto)return alert("Calcule o volume da obra primeiro.");
+  if(!mercadoEscolhido)return alert("Selecione um dos mercados que vendem construção.");
+  const empresa=document.getElementById("empresa").value.trim();
+  const banco=document.getElementById("banco").value.trim();
+  const governo=document.getElementById("governo").value.trim();
+  if(!empresa||!banco||!governo)return alert("Informe empresa, banco e Governo.");
+  const codigo="LIC-"+Date.now().toString(36).toUpperCase();
+  const compra=projeto.quantidade*mercadoEscolhido.precoVenda;
+  const carta={
+    codigo,tipo:"licitacao_obra_federal",status:"aguardando_senado",
+    governo,estado:projeto.estado,obra_id:projeto.obraId,obra_tipo:projeto.obra,nome_obra:projeto.nomeObra,
+    dimensoes_m:{comprimento:projeto.c,largura:projeto.l,altura:projeto.a},
+    volume_m3:projeto.volume,material:"construcao",
+    quantidade_m3:projeto.quantidade,
+    mercado:mercadoEscolhido.id,preco_mercado_m3:mercadoEscolhido.precoVenda,
+    valor_compra_usd:compra,empresa_obra:empresa,banco_transferencia:banco,
+    data:new Date().toISOString()
+  };
+  localStorage.setItem("ultima_carta_licitante",JSON.stringify(carta));
+  document.getElementById("saida").innerHTML=
+  '<div class="box"><div class="letter"><h2 style="text-align:center">CARTA DE LICITAÇÃO FEDERAL</h2>'+
+  '<div class="code">'+codigo+'</div><hr><div class="status"><b>STATUS:</b> AGUARDANDO SENADO</div>'+
+  '<p><b>ÓRGÃO:</b> '+governo+'</p><p><b>ESTADO DA OBRA:</b> '+projeto.estado+'</p><p><b>NOME DA OBRA:</b> '+projeto.nomeObra+'</p><p><b>TIPO DE OBRA:</b> '+projeto.obra+'</p>'+
+  '<p><b>DIMENSÕES:</b> '+projeto.c+' × '+projeto.l+' × '+projeto.a+' m</p>'+
+  '<p><b>VOLUME:</b> '+projeto.volume.toLocaleString("pt-BR",{maximumFractionDigits:2})+' m³</p>'+
+  '<p><b>MATERIAL:</b> CONSTRUÇÃO</p><p><b>QUANTIDADE:</b> '+projeto.quantidade.toLocaleString("pt-BR",{maximumFractionDigits:2})+' m³</p>'+
+  '<p><b>MERCADO:</b> '+mercadoEscolhido.nome+' ('+mercadoEscolhido.id+')</p>'+
+  '<p><b>PREÇO DO MERCADO:</b> '+dinheiro(mercadoEscolhido.precoVenda)+' / m³</p>'+
+  '<p><b>VALOR DA COMPRA:</b> '+dinheiro(compra)+'</p><hr>'+
+  '<p><b>EMPRESA DA OBRA:</b> '+empresa+'</p><p><b>BANCO:</b> '+banco+'</p>'+
+  '<p><b>FLUXO:</b> SENADO → STAFF</p>'+
+  '<p class="muted">Esta carta não altera saldo, estoque ou mercado. A Staff valida a operação e posteriormente atualiza os JSON oficiais.</p>'+
+  '</div><button onclick="window.print()">IMPRIMIR / APRESENTAR AO SENADO</button></div>';
+}
+</script>
+</body></html>
