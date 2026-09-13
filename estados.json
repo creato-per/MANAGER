@@ -1,0 +1,7756 @@
+{
+  "pais": "Estados Unidos",
+  "observacao": "Populações são valores de simulação; cada grupo soma exatamente a população da cidade.",
+  "estados": [
+    {
+      "nome": "Alabama",
+      "cidades": [
+        {
+          "nome": "Birmingham",
+          "populacao": 200000,
+          "grupos": {
+            "jovens": {
+              "populacao": 60000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 100000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Montgomery",
+          "populacao": 195000,
+          "grupos": {
+            "jovens": {
+              "populacao": 58500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 97500,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 39000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Mobile",
+          "populacao": 185000,
+          "grupos": {
+            "jovens": {
+              "populacao": 55500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 92500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 37000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Huntsville",
+          "populacao": 225000,
+          "grupos": {
+            "jovens": {
+              "populacao": 67500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 112500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 45000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Tuscaloosa",
+          "populacao": 105000,
+          "grupos": {
+            "jovens": {
+              "populacao": 31500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 52500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 21000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Alaska",
+      "cidades": [
+        {
+          "nome": "Anchorage",
+          "populacao": 290000,
+          "grupos": {
+            "jovens": {
+              "populacao": 87000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 145000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 58000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Fairbanks",
+          "populacao": 32000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9600,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 6400,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Juneau",
+          "populacao": 32000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9600,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 6400,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Wasilla",
+          "populacao": 13000,
+          "grupos": {
+            "jovens": {
+              "populacao": 3900,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 6500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 2600,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Ketchikan",
+          "populacao": 8500,
+          "grupos": {
+            "jovens": {
+              "populacao": 2550,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 4250,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 1700,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Arizona",
+      "cidades": [
+        {
+          "nome": "Phoenix",
+          "populacao": 1650000,
+          "grupos": {
+            "jovens": {
+              "populacao": 495000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 825000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 330000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Tucson",
+          "populacao": 550000,
+          "grupos": {
+            "jovens": {
+              "populacao": 165000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 275000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 110000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Mesa",
+          "populacao": 510000,
+          "grupos": {
+            "jovens": {
+              "populacao": 153000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 255000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 102000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Chandler",
+          "populacao": 290000,
+          "grupos": {
+            "jovens": {
+              "populacao": 87000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 145000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 58000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Scottsdale",
+          "populacao": 245000,
+          "grupos": {
+            "jovens": {
+              "populacao": 73500,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 122500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 49000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Arkansas",
+      "cidades": [
+        {
+          "nome": "Little Rock",
+          "populacao": 205000,
+          "grupos": {
+            "jovens": {
+              "populacao": 61500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 102500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 41000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Fort Smith",
+          "populacao": 90000,
+          "grupos": {
+            "jovens": {
+              "populacao": 27000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 45000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 18000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Fayetteville",
+          "populacao": 95000,
+          "grupos": {
+            "jovens": {
+              "populacao": 28500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 47500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 19000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Springdale",
+          "populacao": 90000,
+          "grupos": {
+            "jovens": {
+              "populacao": 27000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 45000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 18000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Jonesboro",
+          "populacao": 80000,
+          "grupos": {
+            "jovens": {
+              "populacao": 24000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "California",
+      "cidades": [
+        {
+          "nome": "Los Angeles",
+          "populacao": 3900000,
+          "grupos": {
+            "jovens": {
+              "populacao": 1170000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 1950000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 780000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "San Diego",
+          "populacao": 1400000,
+          "grupos": {
+            "jovens": {
+              "populacao": 420000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 700000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 280000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "San Jose",
+          "populacao": 970000,
+          "grupos": {
+            "jovens": {
+              "populacao": 291000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 485000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 194000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "San Francisco",
+          "populacao": 810000,
+          "grupos": {
+            "jovens": {
+              "populacao": 243000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 405000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 162000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Fresno",
+          "populacao": 545000,
+          "grupos": {
+            "jovens": {
+              "populacao": 163500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 272500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 109000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Colorado",
+      "cidades": [
+        {
+          "nome": "Denver",
+          "populacao": 715000,
+          "grupos": {
+            "jovens": {
+              "populacao": 214500,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 357500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 143000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Colorado Springs",
+          "populacao": 485000,
+          "grupos": {
+            "jovens": {
+              "populacao": 145500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 242500,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 97000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Aurora",
+          "populacao": 395000,
+          "grupos": {
+            "jovens": {
+              "populacao": 118500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 197500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 79000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Fort Collins",
+          "populacao": 175000,
+          "grupos": {
+            "jovens": {
+              "populacao": 52500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 87500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 35000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Lakewood",
+          "populacao": 155000,
+          "grupos": {
+            "jovens": {
+              "populacao": 46500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 77500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 31000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Connecticut",
+      "cidades": [
+        {
+          "nome": "Bridgeport",
+          "populacao": 150000,
+          "grupos": {
+            "jovens": {
+              "populacao": 45000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 75000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 30000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "New Haven",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Stamford",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Hartford",
+          "populacao": 120000,
+          "grupos": {
+            "jovens": {
+              "populacao": 36000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 60000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 24000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Waterbury",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Delaware",
+      "cidades": [
+        {
+          "nome": "Wilmington",
+          "populacao": 70000,
+          "grupos": {
+            "jovens": {
+              "populacao": 21000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 35000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 14000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Dover",
+          "populacao": 40000,
+          "grupos": {
+            "jovens": {
+              "populacao": 12000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 20000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 8000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Newark",
+          "populacao": 35000,
+          "grupos": {
+            "jovens": {
+              "populacao": 10500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 17500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 7000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Middletown",
+          "populacao": 24000,
+          "grupos": {
+            "jovens": {
+              "populacao": 7200,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 12000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 4800,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Smyrna",
+          "populacao": 13000,
+          "grupos": {
+            "jovens": {
+              "populacao": 3900,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 6500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 2600,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Florida",
+      "cidades": [
+        {
+          "nome": "Jacksonville",
+          "populacao": 980000,
+          "grupos": {
+            "jovens": {
+              "populacao": 294000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 490000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 196000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Miami",
+          "populacao": 450000,
+          "grupos": {
+            "jovens": {
+              "populacao": 135000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 225000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 90000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Tampa",
+          "populacao": 405000,
+          "grupos": {
+            "jovens": {
+              "populacao": 121500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 202500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 81000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Orlando",
+          "populacao": 320000,
+          "grupos": {
+            "jovens": {
+              "populacao": 96000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 160000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 64000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "St. Petersburg",
+          "populacao": 260000,
+          "grupos": {
+            "jovens": {
+              "populacao": 78000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 130000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 52000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Georgia",
+      "cidades": [
+        {
+          "nome": "Atlanta",
+          "populacao": 510000,
+          "grupos": {
+            "jovens": {
+              "populacao": 153000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 255000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 102000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Augusta",
+          "populacao": 205000,
+          "grupos": {
+            "jovens": {
+              "populacao": 61500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 102500,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 41000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Columbus",
+          "populacao": 200000,
+          "grupos": {
+            "jovens": {
+              "populacao": 60000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 100000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Macon",
+          "populacao": 155000,
+          "grupos": {
+            "jovens": {
+              "populacao": 46500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 77500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 31000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Savannah",
+          "populacao": 150000,
+          "grupos": {
+            "jovens": {
+              "populacao": 45000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 75000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 30000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Hawaii",
+      "cidades": [
+        {
+          "nome": "Honolulu",
+          "populacao": 345000,
+          "grupos": {
+            "jovens": {
+              "populacao": 103500,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 172500,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 69000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Hilo",
+          "populacao": 45000,
+          "grupos": {
+            "jovens": {
+              "populacao": 13500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 22500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 9000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Kailua",
+          "populacao": 40000,
+          "grupos": {
+            "jovens": {
+              "populacao": 12000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 20000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 8000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Kaneohe",
+          "populacao": 35000,
+          "grupos": {
+            "jovens": {
+              "populacao": 10500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 17500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 7000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Pearl City",
+          "populacao": 47000,
+          "grupos": {
+            "jovens": {
+              "populacao": 14100,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 23500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 9400,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Idaho",
+      "cidades": [
+        {
+          "nome": "Boise",
+          "populacao": 240000,
+          "grupos": {
+            "jovens": {
+              "populacao": 72000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 120000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 48000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Meridian",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Nampa",
+          "populacao": 125000,
+          "grupos": {
+            "jovens": {
+              "populacao": 37500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 62500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 25000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Idaho Falls",
+          "populacao": 65000,
+          "grupos": {
+            "jovens": {
+              "populacao": 19500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 32500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 13000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Pocatello",
+          "populacao": 56000,
+          "grupos": {
+            "jovens": {
+              "populacao": 16800,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 28000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 11200,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Illinois",
+      "cidades": [
+        {
+          "nome": "Chicago",
+          "populacao": 2700000,
+          "grupos": {
+            "jovens": {
+              "populacao": 810000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 1350000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 540000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Aurora",
+          "populacao": 180000,
+          "grupos": {
+            "jovens": {
+              "populacao": 54000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 90000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 36000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rockford",
+          "populacao": 145000,
+          "grupos": {
+            "jovens": {
+              "populacao": 43500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 72500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 29000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Joliet",
+          "populacao": 155000,
+          "grupos": {
+            "jovens": {
+              "populacao": 46500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 77500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 31000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Naperville",
+          "populacao": 150000,
+          "grupos": {
+            "jovens": {
+              "populacao": 45000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 75000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 30000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Indiana",
+      "cidades": [
+        {
+          "nome": "Indianapolis",
+          "populacao": 890000,
+          "grupos": {
+            "jovens": {
+              "populacao": 267000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 445000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 178000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Fort Wayne",
+          "populacao": 270000,
+          "grupos": {
+            "jovens": {
+              "populacao": 81000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 135000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 54000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Evansville",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "South Bend",
+          "populacao": 105000,
+          "grupos": {
+            "jovens": {
+              "populacao": 31500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 52500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 21000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Carmel",
+          "populacao": 105000,
+          "grupos": {
+            "jovens": {
+              "populacao": 31500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 52500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 21000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Iowa",
+      "cidades": [
+        {
+          "nome": "Des Moines",
+          "populacao": 215000,
+          "grupos": {
+            "jovens": {
+              "populacao": 64500,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 107500,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 43000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Cedar Rapids",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Davenport",
+          "populacao": 100000,
+          "grupos": {
+            "jovens": {
+              "populacao": 30000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 50000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 20000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Sioux City",
+          "populacao": 85000,
+          "grupos": {
+            "jovens": {
+              "populacao": 25500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 42500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 17000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Iowa City",
+          "populacao": 80000,
+          "grupos": {
+            "jovens": {
+              "populacao": 24000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Kansas",
+      "cidades": [
+        {
+          "nome": "Wichita",
+          "populacao": 400000,
+          "grupos": {
+            "jovens": {
+              "populacao": 120000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 200000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 80000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Overland Park",
+          "populacao": 200000,
+          "grupos": {
+            "jovens": {
+              "populacao": 60000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 100000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Kansas City",
+          "populacao": 160000,
+          "grupos": {
+            "jovens": {
+              "populacao": 48000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 80000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 32000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Olathe",
+          "populacao": 145000,
+          "grupos": {
+            "jovens": {
+              "populacao": 43500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 72500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 29000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Topeka",
+          "populacao": 125000,
+          "grupos": {
+            "jovens": {
+              "populacao": 37500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 62500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 25000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Kentucky",
+      "cidades": [
+        {
+          "nome": "Louisville",
+          "populacao": 620000,
+          "grupos": {
+            "jovens": {
+              "populacao": 186000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 310000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 124000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Lexington",
+          "populacao": 330000,
+          "grupos": {
+            "jovens": {
+              "populacao": 99000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 165000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 66000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bowling Green",
+          "populacao": 75000,
+          "grupos": {
+            "jovens": {
+              "populacao": 22500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 37500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 15000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Owensboro",
+          "populacao": 60000,
+          "grupos": {
+            "jovens": {
+              "populacao": 18000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 30000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 12000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Covington",
+          "populacao": 41000,
+          "grupos": {
+            "jovens": {
+              "populacao": 12300,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 20500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 8200,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Louisiana",
+      "cidades": [
+        {
+          "nome": "New Orleans",
+          "populacao": 380000,
+          "grupos": {
+            "jovens": {
+              "populacao": 114000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 190000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 76000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Baton Rouge",
+          "populacao": 225000,
+          "grupos": {
+            "jovens": {
+              "populacao": 67500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 112500,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 45000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Shreveport",
+          "populacao": 185000,
+          "grupos": {
+            "jovens": {
+              "populacao": 55500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 92500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 37000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Lafayette",
+          "populacao": 125000,
+          "grupos": {
+            "jovens": {
+              "populacao": 37500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 62500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 25000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Lake Charles",
+          "populacao": 85000,
+          "grupos": {
+            "jovens": {
+              "populacao": 25500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 42500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 17000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Maine",
+      "cidades": [
+        {
+          "nome": "Portland",
+          "populacao": 68000,
+          "grupos": {
+            "jovens": {
+              "populacao": 20400,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 34000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 13600,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Lewiston",
+          "populacao": 38000,
+          "grupos": {
+            "jovens": {
+              "populacao": 11400,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 19000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 7600,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bangor",
+          "populacao": 32000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9600,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 6400,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "South Portland",
+          "populacao": 26000,
+          "grupos": {
+            "jovens": {
+              "populacao": 7800,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 13000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 5200,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Auburn",
+          "populacao": 24000,
+          "grupos": {
+            "jovens": {
+              "populacao": 7200,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 12000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 4800,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Maryland",
+      "cidades": [
+        {
+          "nome": "Baltimore",
+          "populacao": 570000,
+          "grupos": {
+            "jovens": {
+              "populacao": 171000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 285000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 114000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Frederick",
+          "populacao": 80000,
+          "grupos": {
+            "jovens": {
+              "populacao": 24000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rockville",
+          "populacao": 70000,
+          "grupos": {
+            "jovens": {
+              "populacao": 21000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 35000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 14000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Gaithersburg",
+          "populacao": 70000,
+          "grupos": {
+            "jovens": {
+              "populacao": 21000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 35000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 14000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bowie",
+          "populacao": 58000,
+          "grupos": {
+            "jovens": {
+              "populacao": 17400,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 29000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 11600,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Massachusetts",
+      "cidades": [
+        {
+          "nome": "Boston",
+          "populacao": 650000,
+          "grupos": {
+            "jovens": {
+              "populacao": 195000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 325000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 130000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Worcester",
+          "populacao": 210000,
+          "grupos": {
+            "jovens": {
+              "populacao": 63000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 105000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 42000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Springfield",
+          "populacao": 155000,
+          "grupos": {
+            "jovens": {
+              "populacao": 46500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 77500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 31000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Cambridge",
+          "populacao": 120000,
+          "grupos": {
+            "jovens": {
+              "populacao": 36000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 60000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Lowell",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Michigan",
+      "cidades": [
+        {
+          "nome": "Detroit",
+          "populacao": 620000,
+          "grupos": {
+            "jovens": {
+              "populacao": 186000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 310000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 124000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Grand Rapids",
+          "populacao": 200000,
+          "grupos": {
+            "jovens": {
+              "populacao": 60000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 100000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Warren",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Sterling Heights",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Ann Arbor",
+          "populacao": 125000,
+          "grupos": {
+            "jovens": {
+              "populacao": 37500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 62500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 25000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Minnesota",
+      "cidades": [
+        {
+          "nome": "Minneapolis",
+          "populacao": 430000,
+          "grupos": {
+            "jovens": {
+              "populacao": 129000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 215000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 86000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Saint Paul",
+          "populacao": 315000,
+          "grupos": {
+            "jovens": {
+              "populacao": 94500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 157500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 63000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rochester",
+          "populacao": 125000,
+          "grupos": {
+            "jovens": {
+              "populacao": 37500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 62500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 25000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Duluth",
+          "populacao": 85000,
+          "grupos": {
+            "jovens": {
+              "populacao": 25500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 42500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 17000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bloomington",
+          "populacao": 90000,
+          "grupos": {
+            "jovens": {
+              "populacao": 27000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 45000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 18000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Mississippi",
+      "cidades": [
+        {
+          "nome": "Jackson",
+          "populacao": 145000,
+          "grupos": {
+            "jovens": {
+              "populacao": 43500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 72500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 29000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Gulfport",
+          "populacao": 72000,
+          "grupos": {
+            "jovens": {
+              "populacao": 21600,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 36000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 14400,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Southaven",
+          "populacao": 60000,
+          "grupos": {
+            "jovens": {
+              "populacao": 18000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 30000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 12000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Hattiesburg",
+          "populacao": 48000,
+          "grupos": {
+            "jovens": {
+              "populacao": 14400,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 9600,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Biloxi",
+          "populacao": 45000,
+          "grupos": {
+            "jovens": {
+              "populacao": 13500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 22500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 9000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Missouri",
+      "cidades": [
+        {
+          "nome": "Kansas City",
+          "populacao": 510000,
+          "grupos": {
+            "jovens": {
+              "populacao": 153000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 255000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 102000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "St. Louis",
+          "populacao": 280000,
+          "grupos": {
+            "jovens": {
+              "populacao": 84000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 140000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 56000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Springfield",
+          "populacao": 170000,
+          "grupos": {
+            "jovens": {
+              "populacao": 51000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 85000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 34000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Columbia",
+          "populacao": 130000,
+          "grupos": {
+            "jovens": {
+              "populacao": 39000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 65000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 26000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Independence",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Montana",
+      "cidades": [
+        {
+          "nome": "Billings",
+          "populacao": 120000,
+          "grupos": {
+            "jovens": {
+              "populacao": 36000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 60000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Missoula",
+          "populacao": 78000,
+          "grupos": {
+            "jovens": {
+              "populacao": 23400,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 39000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 15600,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Great Falls",
+          "populacao": 60000,
+          "grupos": {
+            "jovens": {
+              "populacao": 18000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 30000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 12000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bozeman",
+          "populacao": 55000,
+          "grupos": {
+            "jovens": {
+              "populacao": 16500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 27500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 11000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Helena",
+          "populacao": 35000,
+          "grupos": {
+            "jovens": {
+              "populacao": 10500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 17500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 7000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Nebraska",
+      "cidades": [
+        {
+          "nome": "Omaha",
+          "populacao": 490000,
+          "grupos": {
+            "jovens": {
+              "populacao": 147000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 245000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 98000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Lincoln",
+          "populacao": 300000,
+          "grupos": {
+            "jovens": {
+              "populacao": 90000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 150000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 60000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bellevue",
+          "populacao": 65000,
+          "grupos": {
+            "jovens": {
+              "populacao": 19500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 32500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 13000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Grand Island",
+          "populacao": 52000,
+          "grupos": {
+            "jovens": {
+              "populacao": 15600,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 26000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 10400,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Kearney",
+          "populacao": 33000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9900,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 16500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 6600,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Nevada",
+      "cidades": [
+        {
+          "nome": "Las Vegas",
+          "populacao": 660000,
+          "grupos": {
+            "jovens": {
+              "populacao": 198000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 330000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 132000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Henderson",
+          "populacao": 340000,
+          "grupos": {
+            "jovens": {
+              "populacao": 102000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 170000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 68000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Reno",
+          "populacao": 275000,
+          "grupos": {
+            "jovens": {
+              "populacao": 82500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 137500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 55000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "North Las Vegas",
+          "populacao": 300000,
+          "grupos": {
+            "jovens": {
+              "populacao": 90000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 150000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 60000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Sparks",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "New Hampshire",
+      "cidades": [
+        {
+          "nome": "Manchester",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Nashua",
+          "populacao": 95000,
+          "grupos": {
+            "jovens": {
+              "populacao": 28500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 47500,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 19000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Concord",
+          "populacao": 45000,
+          "grupos": {
+            "jovens": {
+              "populacao": 13500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 22500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 9000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Derry",
+          "populacao": 35000,
+          "grupos": {
+            "jovens": {
+              "populacao": 10500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 17500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 7000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Dover",
+          "populacao": 32000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9600,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 6400,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "New Jersey",
+      "cidades": [
+        {
+          "nome": "Newark",
+          "populacao": 305000,
+          "grupos": {
+            "jovens": {
+              "populacao": 91500,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 152500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 61000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Jersey City",
+          "populacao": 285000,
+          "grupos": {
+            "jovens": {
+              "populacao": 85500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 142500,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 57000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Paterson",
+          "populacao": 160000,
+          "grupos": {
+            "jovens": {
+              "populacao": 48000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 80000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 32000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Elizabeth",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Edison",
+          "populacao": 110000,
+          "grupos": {
+            "jovens": {
+              "populacao": 33000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 55000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 22000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "New Mexico",
+      "cidades": [
+        {
+          "nome": "Albuquerque",
+          "populacao": 560000,
+          "grupos": {
+            "jovens": {
+              "populacao": 168000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 280000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 112000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Las Cruces",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rio Rancho",
+          "populacao": 105000,
+          "grupos": {
+            "jovens": {
+              "populacao": 31500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 52500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 21000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Santa Fe",
+          "populacao": 90000,
+          "grupos": {
+            "jovens": {
+              "populacao": 27000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 45000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 18000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Roswell",
+          "populacao": 48000,
+          "grupos": {
+            "jovens": {
+              "populacao": 14400,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 9600,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "New York",
+      "cidades": [
+        {
+          "nome": "New York City",
+          "populacao": 8300000,
+          "grupos": {
+            "jovens": {
+              "populacao": 2490000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 4150000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 1660000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Buffalo",
+          "populacao": 275000,
+          "grupos": {
+            "jovens": {
+              "populacao": 82500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 137500,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 55000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rochester",
+          "populacao": 210000,
+          "grupos": {
+            "jovens": {
+              "populacao": 63000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 105000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 42000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Yonkers",
+          "populacao": 210000,
+          "grupos": {
+            "jovens": {
+              "populacao": 63000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 105000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 42000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Syracuse",
+          "populacao": 145000,
+          "grupos": {
+            "jovens": {
+              "populacao": 43500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 72500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 29000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "North Carolina",
+      "cidades": [
+        {
+          "nome": "Charlotte",
+          "populacao": 900000,
+          "grupos": {
+            "jovens": {
+              "populacao": 270000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 450000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 180000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Raleigh",
+          "populacao": 500000,
+          "grupos": {
+            "jovens": {
+              "populacao": 150000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 250000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 100000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Greensboro",
+          "populacao": 300000,
+          "grupos": {
+            "jovens": {
+              "populacao": 90000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 150000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 60000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Durham",
+          "populacao": 290000,
+          "grupos": {
+            "jovens": {
+              "populacao": 87000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 145000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 58000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Winston-Salem",
+          "populacao": 255000,
+          "grupos": {
+            "jovens": {
+              "populacao": 76500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 127500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 51000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "North Dakota",
+      "cidades": [
+        {
+          "nome": "Fargo",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bismarck",
+          "populacao": 78000,
+          "grupos": {
+            "jovens": {
+              "populacao": 23400,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 39000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 15600,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Grand Forks",
+          "populacao": 60000,
+          "grupos": {
+            "jovens": {
+              "populacao": 18000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 30000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 12000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Minot",
+          "populacao": 48000,
+          "grupos": {
+            "jovens": {
+              "populacao": 14400,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 9600,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "West Fargo",
+          "populacao": 42000,
+          "grupos": {
+            "jovens": {
+              "populacao": 12600,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 21000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 8400,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Ohio",
+      "cidades": [
+        {
+          "nome": "Columbus",
+          "populacao": 920000,
+          "grupos": {
+            "jovens": {
+              "populacao": 276000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 460000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 184000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Cleveland",
+          "populacao": 360000,
+          "grupos": {
+            "jovens": {
+              "populacao": 108000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 180000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 72000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Cincinnati",
+          "populacao": 310000,
+          "grupos": {
+            "jovens": {
+              "populacao": 93000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 155000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 62000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Toledo",
+          "populacao": 270000,
+          "grupos": {
+            "jovens": {
+              "populacao": 81000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 135000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 54000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Akron",
+          "populacao": 190000,
+          "grupos": {
+            "jovens": {
+              "populacao": 57000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 95000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 38000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Oklahoma",
+      "cidades": [
+        {
+          "nome": "Oklahoma City",
+          "populacao": 700000,
+          "grupos": {
+            "jovens": {
+              "populacao": 210000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 350000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 140000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Tulsa",
+          "populacao": 415000,
+          "grupos": {
+            "jovens": {
+              "populacao": 124500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 207500,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 83000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Norman",
+          "populacao": 135000,
+          "grupos": {
+            "jovens": {
+              "populacao": 40500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 67500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 27000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Broken Arrow",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Edmond",
+          "populacao": 100000,
+          "grupos": {
+            "jovens": {
+              "populacao": 30000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 50000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 20000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Oregon",
+      "cidades": [
+        {
+          "nome": "Portland",
+          "populacao": 650000,
+          "grupos": {
+            "jovens": {
+              "populacao": 195000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 325000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 130000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Eugene",
+          "populacao": 180000,
+          "grupos": {
+            "jovens": {
+              "populacao": 54000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 90000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 36000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Salem",
+          "populacao": 175000,
+          "grupos": {
+            "jovens": {
+              "populacao": 52500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 87500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 35000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Gresham",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Hillsboro",
+          "populacao": 110000,
+          "grupos": {
+            "jovens": {
+              "populacao": 33000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 55000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 22000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Pennsylvania",
+      "cidades": [
+        {
+          "nome": "Philadelphia",
+          "populacao": 1550000,
+          "grupos": {
+            "jovens": {
+              "populacao": 465000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 775000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 310000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Pittsburgh",
+          "populacao": 300000,
+          "grupos": {
+            "jovens": {
+              "populacao": 90000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 150000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 60000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Allentown",
+          "populacao": 125000,
+          "grupos": {
+            "jovens": {
+              "populacao": 37500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 62500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 25000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Erie",
+          "populacao": 95000,
+          "grupos": {
+            "jovens": {
+              "populacao": 28500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 47500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 19000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Reading",
+          "populacao": 95000,
+          "grupos": {
+            "jovens": {
+              "populacao": 28500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 47500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 19000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Rhode Island",
+      "cidades": [
+        {
+          "nome": "Providence",
+          "populacao": 190000,
+          "grupos": {
+            "jovens": {
+              "populacao": 57000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 95000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 38000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Warwick",
+          "populacao": 83000,
+          "grupos": {
+            "jovens": {
+              "populacao": 24900,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 41500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 16600,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Cranston",
+          "populacao": 83000,
+          "grupos": {
+            "jovens": {
+              "populacao": 24900,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 41500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 16600,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Pawtucket",
+          "populacao": 75000,
+          "grupos": {
+            "jovens": {
+              "populacao": 22500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 37500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 15000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "East Providence",
+          "populacao": 48000,
+          "grupos": {
+            "jovens": {
+              "populacao": 14400,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 9600,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "South Carolina",
+      "cidades": [
+        {
+          "nome": "Charleston",
+          "populacao": 155000,
+          "grupos": {
+            "jovens": {
+              "populacao": 46500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 77500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 31000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Columbia",
+          "populacao": 140000,
+          "grupos": {
+            "jovens": {
+              "populacao": 42000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 70000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 28000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "North Charleston",
+          "populacao": 120000,
+          "grupos": {
+            "jovens": {
+              "populacao": 36000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 60000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Mount Pleasant",
+          "populacao": 95000,
+          "grupos": {
+            "jovens": {
+              "populacao": 28500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 47500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 19000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rock Hill",
+          "populacao": 80000,
+          "grupos": {
+            "jovens": {
+              "populacao": 24000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "South Dakota",
+      "cidades": [
+        {
+          "nome": "Sioux Falls",
+          "populacao": 215000,
+          "grupos": {
+            "jovens": {
+              "populacao": 64500,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 107500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 43000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rapid City",
+          "populacao": 80000,
+          "grupos": {
+            "jovens": {
+              "populacao": 24000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 40000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 16000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Aberdeen",
+          "populacao": 29000,
+          "grupos": {
+            "jovens": {
+              "populacao": 8700,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 14500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 5800,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Brookings",
+          "populacao": 25000,
+          "grupos": {
+            "jovens": {
+              "populacao": 7500,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 12500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 5000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Watertown",
+          "populacao": 23000,
+          "grupos": {
+            "jovens": {
+              "populacao": 6900,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 11500,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 4600,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Tennessee",
+      "cidades": [
+        {
+          "nome": "Nashville",
+          "populacao": 710000,
+          "grupos": {
+            "jovens": {
+              "populacao": 213000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 355000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 142000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Memphis",
+          "populacao": 620000,
+          "grupos": {
+            "jovens": {
+              "populacao": 186000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 310000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 124000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Knoxville",
+          "populacao": 195000,
+          "grupos": {
+            "jovens": {
+              "populacao": 58500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 97500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 39000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Chattanooga",
+          "populacao": 190000,
+          "grupos": {
+            "jovens": {
+              "populacao": 57000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 95000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 38000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Clarksville",
+          "populacao": 175000,
+          "grupos": {
+            "jovens": {
+              "populacao": 52500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 87500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 35000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Texas",
+      "cidades": [
+        {
+          "nome": "Houston",
+          "populacao": 2300000,
+          "grupos": {
+            "jovens": {
+              "populacao": 690000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 1150000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 460000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "San Antonio",
+          "populacao": 1500000,
+          "grupos": {
+            "jovens": {
+              "populacao": 450000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 750000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 300000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Dallas",
+          "populacao": 1300000,
+          "grupos": {
+            "jovens": {
+              "populacao": 390000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 650000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 260000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Austin",
+          "populacao": 1000000,
+          "grupos": {
+            "jovens": {
+              "populacao": 300000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 500000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 200000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Fort Worth",
+          "populacao": 1000000,
+          "grupos": {
+            "jovens": {
+              "populacao": 300000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 500000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 200000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Utah",
+      "cidades": [
+        {
+          "nome": "Salt Lake City",
+          "populacao": 215000,
+          "grupos": {
+            "jovens": {
+              "populacao": 64500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 107500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 43000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "West Valley City",
+          "populacao": 140000,
+          "grupos": {
+            "jovens": {
+              "populacao": 42000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 70000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 28000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Provo",
+          "populacao": 115000,
+          "grupos": {
+            "jovens": {
+              "populacao": 34500,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 57500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 23000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "West Jordan",
+          "populacao": 120000,
+          "grupos": {
+            "jovens": {
+              "populacao": 36000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 60000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 24000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Orem",
+          "populacao": 100000,
+          "grupos": {
+            "jovens": {
+              "populacao": 30000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 50000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 20000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Vermont",
+      "cidades": [
+        {
+          "nome": "Burlington",
+          "populacao": 45000,
+          "grupos": {
+            "jovens": {
+              "populacao": 13500,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 22500,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 9000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "South Burlington",
+          "populacao": 20000,
+          "grupos": {
+            "jovens": {
+              "populacao": 6000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 10000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 4000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rutland",
+          "populacao": 16000,
+          "grupos": {
+            "jovens": {
+              "populacao": 4800,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 8000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 3200,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Barre",
+          "populacao": 9000,
+          "grupos": {
+            "jovens": {
+              "populacao": 2700,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 4500,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 1800,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Montpelier",
+          "populacao": 8000,
+          "grupos": {
+            "jovens": {
+              "populacao": 2400,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 4000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 1600,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Virginia",
+      "cidades": [
+        {
+          "nome": "Virginia Beach",
+          "populacao": 450000,
+          "grupos": {
+            "jovens": {
+              "populacao": 135000,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 225000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 90000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Norfolk",
+          "populacao": 240000,
+          "grupos": {
+            "jovens": {
+              "populacao": 72000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 120000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 48000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Chesapeake",
+          "populacao": 250000,
+          "grupos": {
+            "jovens": {
+              "populacao": 75000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 125000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 50000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Richmond",
+          "populacao": 230000,
+          "grupos": {
+            "jovens": {
+              "populacao": 69000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 115000,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 46000,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Arlington",
+          "populacao": 235000,
+          "grupos": {
+            "jovens": {
+              "populacao": 70500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 117500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 47000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Washington",
+      "cidades": [
+        {
+          "nome": "Seattle",
+          "populacao": 760000,
+          "grupos": {
+            "jovens": {
+              "populacao": 228000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 380000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "idosos": {
+              "populacao": 152000,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Spokane",
+          "populacao": 230000,
+          "grupos": {
+            "jovens": {
+              "populacao": 69000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 115000,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 46000,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Tacoma",
+          "populacao": 225000,
+          "grupos": {
+            "jovens": {
+              "populacao": 67500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 112500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 45000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Vancouver",
+          "populacao": 200000,
+          "grupos": {
+            "jovens": {
+              "populacao": 60000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 100000,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "idosos": {
+              "populacao": 40000,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Bellevue",
+          "populacao": 155000,
+          "grupos": {
+            "jovens": {
+              "populacao": 46500,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            },
+            "adultos": {
+              "populacao": 77500,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "idosos": {
+              "populacao": 31000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "West Virginia",
+      "cidades": [
+        {
+          "nome": "Charleston",
+          "populacao": 45000,
+          "grupos": {
+            "jovens": {
+              "populacao": 13500,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 22500,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "idosos": {
+              "populacao": 9000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Huntington",
+          "populacao": 45000,
+          "grupos": {
+            "jovens": {
+              "populacao": 13500,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "adultos": {
+              "populacao": 22500,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 9000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Morgantown",
+          "populacao": 31000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9300,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            },
+            "adultos": {
+              "populacao": 15500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 6200,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Parkersburg",
+          "populacao": 29000,
+          "grupos": {
+            "jovens": {
+              "populacao": 8700,
+              "objetivos": [
+                "+direitos_civis",
+                "+educacao",
+                "+saude"
+              ]
+            },
+            "adultos": {
+              "populacao": 14500,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 5800,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Wheeling",
+          "populacao": 26000,
+          "grupos": {
+            "jovens": {
+              "populacao": 7800,
+              "objetivos": [
+                "-impostos",
+                "+poder_de_compra",
+                "-custo_de_vida"
+              ]
+            },
+            "adultos": {
+              "populacao": 13000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "idosos": {
+              "populacao": 5200,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Wisconsin",
+      "cidades": [
+        {
+          "nome": "Milwaukee",
+          "populacao": 560000,
+          "grupos": {
+            "jovens": {
+              "populacao": 168000,
+              "objetivos": [
+                "+empregos",
+                "+poder_de_compra",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 280000,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 112000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Madison",
+          "populacao": 285000,
+          "grupos": {
+            "jovens": {
+              "populacao": 85500,
+              "objetivos": [
+                "-impostos",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 142500,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 57000,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Green Bay",
+          "populacao": 110000,
+          "grupos": {
+            "jovens": {
+              "populacao": 33000,
+              "objetivos": [
+                "+educacao",
+                "+saude",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 55000,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "idosos": {
+              "populacao": 22000,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Kenosha",
+          "populacao": 100000,
+          "grupos": {
+            "jovens": {
+              "populacao": 30000,
+              "objetivos": [
+                "+seguranca",
+                "-impostos",
+                "+poder_de_compra"
+              ]
+            },
+            "adultos": {
+              "populacao": 50000,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 20000,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Racine",
+          "populacao": 78000,
+          "grupos": {
+            "jovens": {
+              "populacao": 23400,
+              "objetivos": [
+                "+moradia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "adultos": {
+              "populacao": 39000,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "idosos": {
+              "populacao": 15600,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Wyoming",
+      "cidades": [
+        {
+          "nome": "Cheyenne",
+          "populacao": 65000,
+          "grupos": {
+            "jovens": {
+              "populacao": 19500,
+              "objetivos": [
+                "+transporte",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 32500,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "idosos": {
+              "populacao": 13000,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Casper",
+          "populacao": 55000,
+          "grupos": {
+            "jovens": {
+              "populacao": 16500,
+              "objetivos": [
+                "+saude",
+                "+poder_de_compra",
+                "+moradia"
+              ]
+            },
+            "adultos": {
+              "populacao": 27500,
+              "objetivos": [
+                "+industria",
+                "+empregos",
+                "-impostos"
+              ]
+            },
+            "idosos": {
+              "populacao": 11000,
+              "objetivos": [
+                "+governo_eficiente",
+                "-impostos",
+                "+servicos_publicos"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Laramie",
+          "populacao": 33000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9900,
+              "objetivos": [
+                "+aposentadoria",
+                "+saude",
+                "-impostos"
+              ]
+            },
+            "adultos": {
+              "populacao": 16500,
+              "objetivos": [
+                "+agricultura",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 6600,
+              "objetivos": [
+                "+imigracao",
+                "+empregos",
+                "+seguranca"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Gillette",
+          "populacao": 33000,
+          "grupos": {
+            "jovens": {
+              "populacao": 9900,
+              "objetivos": [
+                "+infraestrutura",
+                "+empregos",
+                "+seguranca"
+              ]
+            },
+            "adultos": {
+              "populacao": 16500,
+              "objetivos": [
+                "+energia",
+                "-custo_de_vida",
+                "+empregos"
+              ]
+            },
+            "idosos": {
+              "populacao": 6600,
+              "objetivos": [
+                "+investimentos",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "Rock Springs",
+          "populacao": 23000,
+          "grupos": {
+            "jovens": {
+              "populacao": 6900,
+              "objetivos": [
+                "+tecnologia",
+                "+empregos",
+                "+investimentos"
+              ]
+            },
+            "adultos": {
+              "populacao": 11500,
+              "objetivos": [
+                "+turismo",
+                "+empregos",
+                "+infraestrutura"
+              ]
+            },
+            "idosos": {
+              "populacao": 4600,
+              "objetivos": [
+                "+meio_ambiente",
+                "+saude",
+                "+energia"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
