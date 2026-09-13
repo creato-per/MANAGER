@@ -3,7 +3,7 @@
   "campanhas": [
     {
       "id": "CAMP_001",
-      "candidato": "1970.001-55",
+      "candidato": "1990.003-31",
       "cidade": "Houston",
       "texto": "O candidato fez discurso para apoiadores e prometeu ampliar a segurança pública.",
       "objetivos": [
@@ -12,7 +12,7 @@
     },
     {
       "id": "CAMP_002",
-      "candidato": "1984.002-21",
+      "candidato": "1990.003-31",
       "cidade": "Austin",
       "texto": "A candidata apresentou propostas para ampliar empregos e investimentos locais.",
       "objetivos": [
