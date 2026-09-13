@@ -1,0 +1,31 @@
+{
+  "observacao": "Grade por horário local; TV.html seleciona o bloco do horário atual.",
+  "canais": [
+    {
+      "canal": "TV_006",
+      "programacao": {
+        "00-03": "PROG_401",
+        "03-06": "PROG_402",
+        "06-09": "PROG_403",
+        "09-12": "PROG_101",
+        "12-15": "PROG_401",
+        "15-18": "PROG_403",
+        "18-21": "PROG_201",
+        "21-00": "PROG_301"
+      }
+    },
+    {
+      "canal": "TV_007",
+      "programacao": {
+        "00-03": "PROG_402",
+        "03-06": "PROG_401",
+        "06-09": "PROG_302",
+        "09-12": "PROG_102",
+        "12-15": "PROG_403",
+        "15-18": "PROG_201",
+        "18-21": "PROG_202",
+        "21-00": "PROG_301"
+      }
+    }
+  ]
+}

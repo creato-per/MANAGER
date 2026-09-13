@@ -1,0 +1,48 @@
+{
+  "observacao": "LUCRO = preço de venda - preço de fábrica - impostos.",
+  "mercados": [
+    {
+      "id": "MKT_001",
+      "nome": "American Market",
+      "estado": "Texas",
+      "produtos": [
+        {
+          "produto": "alimentos",
+          "preco_fabrica": 0.8,
+          "preco_venda": 1.2,
+          "imposto": 0.1
+        },
+        {
+          "produto": "remedios",
+          "preco_fabrica": 0.9,
+          "preco_venda": 1.8,
+          "imposto": 0.15
+        },
+        {
+          "produto": "construcao",
+          "preco_fabrica": 12.0,
+          "preco_venda": 18.0,
+          "imposto": 1.5
+        },
+        {
+          "produto": "livros",
+          "preco_fabrica": 5.0,
+          "preco_venda": 9.0,
+          "imposto": 0.6
+        },
+        {
+          "produto": "tecnologia",
+          "preco_fabrica": 70.0,
+          "preco_venda": 120.0,
+          "imposto": 8.0
+        },
+        {
+          "produto": "combustivel",
+          "preco_fabrica": 0.7,
+          "preco_venda": 1.1,
+          "imposto": 0.12
+        }
+      ]
+    }
+  ]
+}

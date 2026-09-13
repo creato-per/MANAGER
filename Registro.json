@@ -1,0 +1,45 @@
+{
+  "observacao": "Cadastros iniciais de exemplo. Matrícula: ANO.ORDEM-DDD.",
+  "pessoas": [
+    {
+      "matricula": "1970.001-55",
+      "nome": "John Carter",
+      "nome_completo": "John Michael Carter",
+      "cidade": "Houston",
+      "idade": 52,
+      "ocupacao": "Empresário",
+      "partido": "PARTY_001",
+      "cargos": [
+        "2x Deputado",
+        "2x Presidente"
+      ],
+      "patrimonio": "Dono da TV_006"
+    },
+    {
+      "matricula": "1984.002-21",
+      "nome": "Sarah Miller",
+      "nome_completo": "Sarah Elizabeth Miller",
+      "cidade": "Austin",
+      "idade": 41,
+      "ocupacao": "Advogada",
+      "partido": "PARTY_002",
+      "cargos": [
+        "1x Deputada"
+      ],
+      "patrimonio": "Investimentos privados"
+    },
+    {
+      "matricula": "1990.003-31",
+      "nome": "Robert Wilson",
+      "nome_completo": "Robert James Wilson",
+      "cidade": "Chicago",
+      "idade": 36,
+      "ocupacao": "Professor",
+      "partido": "PARTY_003",
+      "cargos": [
+        "1x Deputado"
+      ],
+      "patrimonio": "Imóveis"
+    }
+  ]
+}

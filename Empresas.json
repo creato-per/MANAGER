@@ -1,0 +1,48 @@
+{
+  "observacao": "Valores monetários em dólares; proprietários referenciam Registro.json.",
+  "empresas": [
+    {
+      "id": "TV_006",
+      "tipo": "TV",
+      "nome": "Arianos TV",
+      "dono": "1970.001-55",
+      "caixa": 0.99,
+      "patrimonio": [
+        {
+          "nome": "Estúdio de filmes",
+          "estado": "Texas",
+          "valor": 70000.0
+        },
+        {
+          "nome": "Estúdio de esportes",
+          "estado": "Texas",
+          "valor": 88000.0
+        }
+      ]
+    },
+    {
+      "id": "MKT_001",
+      "tipo": "MKT",
+      "nome": "American Market",
+      "dono": "1984.002-21",
+      "caixa": 50000.0,
+      "patrimonio": []
+    },
+    {
+      "id": "IND_001",
+      "tipo": "IND",
+      "nome": "Texas Food Industries",
+      "dono": "1990.003-31",
+      "caixa": 35000.0,
+      "patrimonio": []
+    },
+    {
+      "id": "VG_001",
+      "tipo": "Vg",
+      "nome": "American Travel",
+      "dono": "1970.001-55",
+      "caixa": 20000.0,
+      "patrimonio": []
+    }
+  ]
+}

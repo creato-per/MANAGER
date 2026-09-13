@@ -1,0 +1,101 @@
+{
+  "observacao": "Conteúdo que a TV.html renderiza. TVs.json contém somente a grade.",
+  "programas": [
+    {
+      "id": "PROG_401",
+      "tipo": "filme",
+      "titulo": "The Last City",
+      "duracao": 120
+    },
+    {
+      "id": "PROG_402",
+      "tipo": "serie",
+      "titulo": "Washington",
+      "duracao": 60
+    },
+    {
+      "id": "PROG_403",
+      "tipo": "esporte",
+      "titulo": "National Football",
+      "duracao": 120
+    },
+    {
+      "id": "PROG_101",
+      "tipo": "noticia",
+      "titulo": "Candidato realiza campanha em Houston",
+      "estado": "Texas",
+      "cidade": "Houston",
+      "candidato": "1970.001-55",
+      "texto": "O candidato realizou um discurso para apoiadores em Houston e reforçou sua proposta de ampliar a segurança pública.",
+      "objetivos": [
+        "+seguranca"
+      ]
+    },
+    {
+      "id": "PROG_102",
+      "tipo": "noticia",
+      "titulo": "Candidata apresenta plano de empregos",
+      "estado": "Texas",
+      "cidade": "Austin",
+      "candidato": "1984.002-21",
+      "texto": "A candidata apresentou propostas para ampliar empregos e investimentos locais.",
+      "objetivos": [
+        "+empregos",
+        "+investimentos"
+      ]
+    },
+    {
+      "id": "PROG_201",
+      "tipo": "opiniao",
+      "titulo": "Candidato demonstra domínio sobre economia",
+      "candidato": "1970.001-55",
+      "objetivo": "empregos",
+      "avaliacao": "tem",
+      "texto": "Ao falar sobre empregos, o candidato demonstrou conhecimento dos principais problemas econômicos."
+    },
+    {
+      "id": "PROG_202",
+      "tipo": "opiniao",
+      "titulo": "Candidato demonstra pouco conhecimento sobre segurança",
+      "candidato": "1970.001-55",
+      "objetivo": "seguranca",
+      "avaliacao": "nao_tem",
+      "texto": "Ao falar sobre segurança pública, o candidato parece não demonstrar conhecimento suficiente sobre o assunto."
+    },
+    {
+      "id": "PROG_301",
+      "tipo": "sabatina",
+      "titulo": "Sabatina presidencial",
+      "candidato": "1970.001-55",
+      "perguntas": [
+        {
+          "pergunta": "Como o candidato pretende reduzir o desemprego?",
+          "resposta": "Pretendo ampliar os investimentos em infraestrutura.",
+          "objetivos": [
+            "+empregos",
+            "+infraestrutura"
+          ]
+        },
+        {
+          "pergunta": "Como pretende financiar essa proposta?",
+          "resposta": "Através de uma revisão dos gastos públicos.",
+          "objetivos": [
+            "+governo_eficiente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROG_302",
+      "tipo": "clipes",
+      "titulo": "Clipes Musicais",
+      "duracao": 60
+    },
+    {
+      "id": "PROG_303",
+      "tipo": "adulto",
+      "titulo": "Conteúdo Adulto",
+      "duracao": 60
+    }
+  ]
+}

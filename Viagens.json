@@ -1,0 +1,32 @@
+{
+  "observacao": "Custo real da rota será calculado pelo motor: 1 litro de combustível por estado cruzado + impostos.",
+  "empresas": [
+    {
+      "id": "VG_001",
+      "nome": "American Travel",
+      "linha": {
+        "origem": "Texas",
+        "destino": "Louisiana"
+      },
+      "preco": 80.0
+    },
+    {
+      "id": "VG_002",
+      "nome": "National Travel",
+      "linha": {
+        "origem": "Texas",
+        "destino": "Oklahoma"
+      },
+      "preco": 70.0
+    },
+    {
+      "id": "VG_003",
+      "nome": "Atlantic Travel",
+      "linha": {
+        "origem": "New York",
+        "destino": "Pennsylvania"
+      },
+      "preco": 65.0
+    }
+  ]
+}

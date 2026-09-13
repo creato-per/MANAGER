@@ -1,0 +1,65 @@
+{
+  "observacao": "Produção anual pode variar de 1 a 1000. Faixas: $ 0.06-1; $$ 1-20; $$$ 20-160.",
+  "industrias": [
+    {
+      "id": "IND_001",
+      "nome": "Texas Food Industries",
+      "produto": "alimentos",
+      "categoria": "$",
+      "estado": "Texas",
+      "producao_anual": 800,
+      "custo_producao": 0.8,
+      "imposto": 0.1
+    },
+    {
+      "id": "IND_002",
+      "nome": "Texas Medicine Labs",
+      "produto": "remedios",
+      "categoria": "$",
+      "estado": "Texas",
+      "producao_anual": 650,
+      "custo_producao": 0.9,
+      "imposto": 0.15
+    },
+    {
+      "id": "IND_003",
+      "nome": "Lone Star Construction",
+      "produto": "construcao",
+      "categoria": "$$",
+      "estado": "Texas",
+      "producao_anual": 300,
+      "custo_producao": 12.0,
+      "imposto": 1.5
+    },
+    {
+      "id": "IND_004",
+      "nome": "American Books",
+      "produto": "livros",
+      "categoria": "$$",
+      "estado": "Illinois",
+      "producao_anual": 420,
+      "custo_producao": 5.0,
+      "imposto": 0.6
+    },
+    {
+      "id": "IND_005",
+      "nome": "American Tech",
+      "produto": "tecnologia",
+      "categoria": "$$$",
+      "estado": "California",
+      "producao_anual": 180,
+      "custo_producao": 70.0,
+      "imposto": 8.0
+    },
+    {
+      "id": "IND_006",
+      "nome": "Texas Fuel",
+      "produto": "combustivel",
+      "categoria": "$",
+      "estado": "Texas",
+      "producao_anual": 950,
+      "custo_producao": 0.7,
+      "imposto": 0.12
+    }
+  ]
+}

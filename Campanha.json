@@ -1,0 +1,34 @@
+{
+  "observacao": "Fatos de campanha; os efeitos são calculados pelo motor.",
+  "campanhas": [
+    {
+      "id": "CAMP_001",
+      "candidato": "1970.001-55",
+      "cidade": "Houston",
+      "texto": "O candidato fez discurso para apoiadores e prometeu ampliar a segurança pública.",
+      "objetivos": [
+        "+seguranca"
+      ]
+    },
+    {
+      "id": "CAMP_002",
+      "candidato": "1984.002-21",
+      "cidade": "Austin",
+      "texto": "A candidata apresentou propostas para ampliar empregos e investimentos locais.",
+      "objetivos": [
+        "+empregos",
+        "+investimentos"
+      ]
+    },
+    {
+      "id": "CAMP_003",
+      "candidato": "1990.003-31",
+      "cidade": "Chicago",
+      "texto": "O candidato participou de encontro público sobre educação e serviços públicos.",
+      "objetivos": [
+        "+educacao",
+        "+servicos_publicos"
+      ]
+    }
+  ]
+}
