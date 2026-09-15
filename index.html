@@ -259,14 +259,22 @@ button.principal {
     <div class="menu">
 
         <button onclick="irParaLicitante()">
-            IR PARA LICITANTE
+            VECTOR — IR PARA LICITANTE
         </button>
 
         <button
             class="principal"
             onclick="simularVotacao()"
         >
-            SIMULAR VOTAÇÃO
+            VECTOR — SIMULAR VOTAÇÃO
+        </button>
+
+        <button onclick="irParaTV()">
+            VECTOR — TV
+        </button>
+
+        <button onclick="irParaRegu()">
+            VECTOR — LEIS
         </button>
 
     </div>
@@ -327,6 +335,22 @@ function irParaLicitante() {
 
     window.location.href =
         "Licitante.html";
+
+}
+
+
+function irParaTV() {
+
+    window.location.href =
+        "TV.html";
+
+}
+
+
+function irParaRegu() {
+
+    window.location.href =
+        "REGU.HTML";
 
 }
 
@@ -1586,7 +1610,7 @@ async function simularVotacao() {
         texto.innerText =
             "Resultado organizado por partido. A simulação utiliza uma variação aleatória de até ±5%.";
 
-        
+
         let html = "";
 
 
