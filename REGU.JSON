@@ -1,0 +1,30 @@
+{
+  "leis_ordinarias": [
+    {
+      "codigo": "0.0001-001/2026",
+      "ordem": 1,
+      "origem": 0,
+      "distrito": "001",
+      "ano_sancao": 2026,
+      "titulo": "Lei de Exemplo",
+      "ementa": "Descrição resumida da lei.",
+      "texto": "Texto completo da lei.",
+      "status": "vigente",
+      "revogada_por": null
+    }
+  ],
+
+  "leis_extraordinarias": [
+    {
+      "codigo": "2026-0001/0",
+      "ordem": 1,
+      "tipo": 0,
+      "ano": 2026,
+      "titulo": "Decisão Extraordinária de Exemplo",
+      "ementa": "Descrição resumida da decisão.",
+      "texto": "Texto completo da decisão.",
+      "status": "vigente",
+      "revogada_por": null
+    }
+  ]
+}
