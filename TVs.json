@@ -2,7 +2,7 @@
   "observacao": "Grade por horário local; TV.html seleciona o bloco do horário atual.",
   "canais": [
     {
-      "canal": "TV_006",
+      "canal": "Canal 6",
       "programacao": {
         "00-03": "PROG_401",
         "03-06": "PROG_402",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "canal": "TV_007",
+      "canal": "AMERICAN PIE",
       "programacao": {
         "00-03": "PROG_402",
         "03-06": "PROG_401",
