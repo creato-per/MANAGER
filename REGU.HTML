@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>SUMMUS — Registro Jurídico</title>
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    background: #080808;
+
+    color: #f5f5f5;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+header {
+
+    background: #111;
+
+    border-bottom:
+        1px solid #292929;
+
+    padding:
+        35px 20px;
+
+    text-align: center;
+
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 34px;
+
+    letter-spacing: 2px;
+
+}
+
+
+header p {
+
+    color: #888;
+
+    margin-top: 10px;
+
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin:
+        30px auto
+        60px;
+
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+.menu {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+button {
+
+    padding: 16px;
+
+    border-radius: 8px;
+
+    border:
+        1px solid #3a3a3a;
+
+    background: #171717;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #252525;
+
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.status {
+
+    background: #111;
+
+    border:
+        1px solid #292929;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.status h2 {
+
+    margin-top: 0;
+
+}
+
+
+.status p {
+
+    color: #888;
+
+}
+
+
+/* =====================================================
+   SEÇÃO
+===================================================== */
+
+.secao {
+
+    margin-bottom: 35px;
+
+}
+
+
+.secao-titulo {
+
+    border-bottom:
+        1px solid #333;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.secao-titulo h2 {
+
+    margin: 0;
+
+}
+
+
+.secao-titulo p {
+
+    color: #777;
+
+    margin-bottom: 0;
+
+}
+
+
+/* =====================================================
+   LEI
+===================================================== */
+
+.lei {
+
+    background: #111;
+
+    border:
+        1px solid #292929;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.lei-topo {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+
+    gap: 20px;
+
+}
+
+
+.codigo {
+
+    font-family:
+        monospace;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    letter-spacing: .5px;
+
+}
+
+
+.status-lei {
+
+    font-size: 12px;
+
+    color: #aaa;
+
+    border:
+        1px solid #444;
+
+    padding:
+        5px 8px;
+
+    border-radius: 5px;
+
+}
+
+
+.titulo {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-top: 14px;
+
+}
+
+
+.ementa {
+
+    color: #aaa;
+
+    line-height: 1.5;
+
+    margin-top: 8px;
+
+}
+
+
+.detalhes {
+
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid #292929;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+.texto {
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background: #0b0b0b;
+
+    border-radius: 7px;
+
+    color: #bbb;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   EXTRAORDINÁRIA
+===================================================== */
+
+.extraordinaria {
+
+    border-color:
+        #444;
+
+}
+
+
+/* =====================================================
+   VAZIO
+===================================================== */
+
+.vazio {
+
+    padding: 25px;
+
+    background: #111;
+
+    border:
+        1px dashed #333;
+
+    border-radius: 10px;
+
+    color: #777;
+
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+.info {
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-top: 30px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (
+    max-width: 600px
+) {
+
+    .lei-topo {
+
+        flex-direction:
+            column;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>SUMMUS</h1>
+
+    <p>
+        Registro Jurídico
+    </p>
+
+</header>
+
+
+<div class="container">
+
+
+    <div class="menu">
+
+        <button
+            onclick="window.location.href='index.html'"
+        >
+            VOLTAR
+        </button>
+
+        <button
+            onclick="carregarLeis()"
+        >
+            ATUALIZAR REGISTRO
+        </button>
+
+    </div>
+
+
+    <div class="status">
+
+        <h2 id="tituloStatus">
+            Registro Jurídico
+        </h2>
+
+        <p id="textoStatus">
+
+            Carregando legislação...
+
+        </p>
+
+    </div>
+
+
+    <div id="conteudo"></div>
+
+
+    <div class="info">
+
+        <strong>Classificação jurídica</strong>
+
+        <br><br>
+
+        Leis ordinárias possuem o formato:
+
+        <br>
+
+        <strong>
+            X.ZZZZ-DDD/AAAA
+        </strong>
+
+        <br><br>
+
+        Leis extraordinárias possuem o formato:
+
+        <br>
+
+        <strong>
+            AAAA-ZZZZ/X
+        </strong>
+
+        <br><br>
+
+        As leis extraordinárias são permanentes,
+        independentemente de terem sido criadas
+        por Staff definitivo ou temporário.
+        Sua revogação depende de decisão colegiada.
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+/* =====================================================
+   ARQUIVO
+===================================================== */
+
+const ARQUIVO =
+    "REGU.JSON";
+
+
+/* =====================================================
+   CARREGAR
+===================================================== */
+
+async function carregarLeis() {
+
+
+    const titulo =
+        document.getElementById(
+            "tituloStatus"
+        );
+
+
+    const status =
+        document.getElementById(
+            "textoStatus"
+        );
+
+
+    const conteudo =
+        document.getElementById(
+            "conteudo"
+        );
+
+
+    titulo.innerText =
+        "Carregando registro...";
+
+
+    status.innerText =
+        "Lendo REGU.JSON";
+
+
+    conteudo.innerHTML =
+        "";
+
+
+    try {
+
+
+        const resposta =
+            await fetch(
+                ARQUIVO +
+                "?v=" +
+                Date.now()
+            );
+
+
+        if (
+            !resposta.ok
+        ) {
+
+            throw new Error(
+                "REGU.JSON não foi encontrado."
+            );
+
+        }
+
+
+        const dados =
+            await resposta.json();
+
+
+        const ordinarias =
+            Array.isArray(
+                dados.leis_ordinarias
+            )
+                ? dados.leis_ordinarias
+                : [];
+
+
+        const extraordinarias =
+            Array.isArray(
+                dados.leis_extraordinarias
+            )
+                ? dados.leis_extraordinarias
+                : [];
+
+
+        /* =============================================
+           STATUS
+        ============================================= */
+
+        titulo.innerText =
+            "Registro Jurídico";
+
+
+        status.innerText =
+            ordinarias.length +
+            " lei(s) ordinária(s) e " +
+            extraordinarias.length +
+            " lei(s) extraordinária(s) registradas.";
+
+
+        let html =
+            "";
+
+
+        /* =============================================
+           LEIS ORDINÁRIAS
+        ============================================= */
+
+        html += `
+
+            <section class="secao">
+
+                <div class="secao-titulo">
+
+                    <h2>
+                        LEIS ORDINÁRIAS
+                    </h2>
+
+                    <p>
+                        Legislação originada pelo
+                        Presidente, Senate ou House.
+                    </p>
+
+                </div>
+
+        `;
+
+
+        if (
+            ordinarias.length === 0
+        ) {
+
+            html += `
+
+                <div class="vazio">
+
+                    Nenhuma lei ordinária
+                    registrada.
+
+                </div>
+
+            `;
+
+        }
+
+
+        ordinarias.forEach(
+            lei => {
+
+                html +=
+                    criarLeiOrdinaria(
+                        lei
+                    );
+
+            }
+        );
+
+
+        html += `
+
+            </section>
+
+        `;
+
+
+        /* =============================================
+           LEIS EXTRAORDINÁRIAS
+        ============================================= */
+
+        html += `
+
+            <section class="secao">
+
+                <div class="secao-titulo">
+
+                    <h2>
+                        LEIS EXTRAORDINÁRIAS
+                    </h2>
+
+                    <p>
+                        Atos jurídicos extraordinários
+                        emitidos pelo Staff ou por
+                        decisão colegiada.
+                    </p>
+
+                </div>
+
+        `;
+
+
+        if (
+            extraordinarias.length === 0
+        ) {
+
+            html += `
+
+                <div class="vazio">
+
+                    Nenhuma lei extraordinária
+                    registrada.
+
+                </div>
+
+            `;
+
+        }
+
+
+        extraordinarias.forEach(
+            lei => {
+
+                html +=
+                    criarLeiExtraordinaria(
+                        lei
+                    );
+
+            }
+        );
+
+
+        html += `
+
+            </section>
+
+        `;
+
+
+        conteudo.innerHTML =
+            html;
+
+
+    } catch (erro) {
+
+
+        titulo.innerText =
+            "Erro";
+
+
+        status.innerHTML =
+            `<span style="color:#ff6969;">
+                ${escapar(
+                    erro.message
+                )}
+            </span>`;
+
+
+    }
+
+}
+
+
+/* =====================================================
+   LEI ORDINÁRIA
+===================================================== */
+
+function criarLeiOrdinaria(
+    lei
+) {
+
+
+    const origem =
+        numeroOrigem(
+            lei.origem
+        );
+
+
+    const codigo =
+        lei.codigo ||
+        gerarCodigoOrdinario(
+            lei
+        );
+
+
+    return `
+
+        <article class="lei">
+
+            <div class="lei-topo">
+
+                <div class="codigo">
+
+                    ${escapar(
+                        codigo
+                    )}
+
+                </div>
+
+                <div class="status-lei">
+
+                    ${escapar(
+                        lei.status ||
+                        "vigente"
+                    )}
+
+                </div>
+
+            </div>
+
+
+            <div class="titulo">
+
+                ${escapar(
+                    lei.titulo ||
+                    "Lei sem título"
+                )}
+
+            </div>
+
+
+            <div class="ementa">
+
+                ${escapar(
+                    lei.ementa ||
+                    "Sem ementa."
+                )}
+
+            </div>
+
+
+            <div class="detalhes">
+
+                Origem:
+                <strong>
+                    ${escapar(
+                        origem
+                    )}
+                </strong>
+
+                <br>
+
+                Distrito:
+                <strong>
+                    ${escapar(
+                        lei.distrito ||
+                        "---"
+                    )}
+                </strong>
+
+                <br>
+
+                Ano de sanção:
+                <strong>
+                    ${escapar(
+                        lei.ano_sancao ||
+                        "---"
+                    )}
+                </strong>
+
+            </div>
+
+
+            <div class="texto">
+
+                ${escapar(
+                    lei.texto ||
+                    "Texto da lei não informado."
+                )}
+
+            </div>
+
+        </article>
+
+    `;
+
+}
+
+
+/* =====================================================
+   LEI EXTRAORDINÁRIA
+===================================================== */
+
+function criarLeiExtraordinaria(
+    lei
+) {
+
+
+    const tipo =
+        numeroTipoStaff(
+            lei.tipo
+        );
+
+
+    const codigo =
+        lei.codigo ||
+        gerarCodigoExtraordinario(
+            lei
+        );
+
+
+    return `
+
+        <article class="lei extraordinaria">
+
+            <div class="lei-topo">
+
+                <div class="codigo">
+
+                    ${escapar(
+                        codigo
+                    )}
+
+                </div>
+
+                <div class="status-lei">
+
+                    ${escapar(
+                        lei.status ||
+                        "vigente"
+                    )}
+
+                </div>
+
+            </div>
+
+
+            <div class="titulo">
+
+                ${escapar(
+                    lei.titulo ||
+                    "Lei extraordinária"
+                )}
+
+            </div>
+
+
+            <div class="ementa">
+
+                ${escapar(
+                    lei.ementa ||
+                    "Sem ementa."
+                )}
+
+            </div>
+
+
+            <div class="detalhes">
+
+                Origem:
+
+                <strong>
+                    ${escapar(
+                        tipo
+                    )}
+                </strong>
+
+                <br>
+
+                Ano:
+
+                <strong>
+                    ${escapar(
+                        lei.ano ||
+                        "---"
+                    )}
+                </strong>
+
+                <br>
+
+                <strong>
+                    LEI PERMANENTE
+                </strong>
+
+                <br>
+
+                Revogação:
+                <strong>
+                    somente por decisão colegiada
+                </strong>
+
+            </div>
+
+
+            <div class="texto">
+
+                ${escapar(
+                    lei.texto ||
+                    "Texto da lei não informado."
+                )}
+
+            </div>
+
+        </article>
+
+    `;
+
+}
+
+
+/* =====================================================
+   ORIGEM DA LEI ORDINÁRIA
+===================================================== */
+
+function numeroOrigem(
+    origem
+) {
+
+    switch (
+        Number(origem)
+    ) {
+
+        case 0:
+            return "Presidente";
+
+        case 1:
+            return "Senate";
+
+        case 2:
+            return "House";
+
+        default:
+            return "Origem desconhecida";
+
+    }
+
+}
+
+
+/* =====================================================
+   TIPO DE STAFF
+===================================================== */
+
+function numeroTipoStaff(
+    tipo
+) {
+
+    switch (
+        Number(tipo)
+    ) {
+
+        case 0:
+            return "Staff definitivo";
+
+        case 1:
+            return "Staff temporário";
+
+        case 2:
+            return "Decisão colegiada";
+
+        default:
+            return "Origem desconhecida";
+
+    }
+
+}
+
+
+/* =====================================================
+   GERAR CÓDIGO ORDINÁRIO
+===================================================== */
+
+function gerarCodigoOrdinario(
+    lei
+) {
+
+    const origem =
+        Number(
+            lei.origem
+        );
+
+
+    const ordem =
+        String(
+            Number(
+                lei.ordem
+            ) || 0
+        )
+        .padStart(
+            4,
+            "0"
+        );
+
+
+    const distrito =
+        String(
+            lei.distrito ||
+            "000"
+        )
+        .padStart(
+            3,
+            "0"
+        );
+
+
+    const ano =
+        lei.ano_sancao ||
+        "0000";
+
+
+    return (
+        origem +
+        "." +
+        ordem +
+        "-" +
+        distrito +
+        "/" +
+        ano
+    );
+
+}
+
+
+/* =====================================================
+   GERAR CÓDIGO EXTRAORDINÁRIO
+===================================================== */
+
+function gerarCodigoExtraordinario(
+    lei
+) {
+
+    const ano =
+        lei.ano ||
+        "0000";
+
+
+    const ordem =
+        String(
+            Number(
+                lei.ordem
+            ) || 0
+        )
+        .padStart(
+            4,
+            "0"
+        );
+
+
+    const tipo =
+        Number(
+            lei.tipo
+        );
+
+
+    return (
+        ano +
+        "-" +
+        ordem +
+        "/" +
+        tipo
+    );
+
+}
+
+
+/* =====================================================
+   ESCAPAR
+===================================================== */
+
+function escapar(
+    texto
+) {
+
+    return String(
+        texto ?? ""
+    )
+    .replace(
+        /&/g,
+        "&amp;"
+    )
+    .replace(
+        /</g,
+        "&lt;"
+    )
+    .replace(
+        />/g,
+        "&gt;"
+    )
+    .replace(
+        /"/g,
+        "&quot;"
+    )
+    .replace(
+        /'/g,
+        "&#039;"
+    );
+
+}
+
+
+/* =====================================================
+   INICIAR
+===================================================== */
+
+carregarLeis();
+
+</script>
+
+
+</body>
+
+</html>
