@@ -3,206 +3,1352 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Political Simulator</title>
+
+<title>SUMMUS — Simulação Nacional</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:Arial,sans-serif;background:#0d1117;color:#eee}
-main{max-width:900px;margin:auto;padding:25px}
-.box{background:#161b22;border:1px solid #30363d;border-radius:14px;padding:22px;margin:15px 0}
-h1{margin:0 0 8px;text-align:center}
-h2{margin-top:0}
-p{color:#9da7b3}
-button{width:100%;padding:15px;margin:8px 0;border:0;border-radius:8px;font-weight:bold;font-size:15px;cursor:pointer}
-.primary{background:#fff;color:#111}
-.secondary{background:#30363d;color:#fff}
-#resultado{display:none}
-.card{background:#0d1117;border:1px solid #30363d;border-radius:10px;padding:15px;margin:10px 0}
-.row{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid #30363d;padding:9px 0}
-.badge{display:inline-block;padding:5px 8px;border-radius:6px;background:#30363d;font-size:12px}
-.big{font-size:25px;font-weight:bold}
-.muted{font-size:13px;color:#8b949e}
-.erro{color:#ff7b72}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0d0d0d;
+        color: #fff;
+        min-height: 100vh;
+    }
+
+    header {
+        background: #151515;
+        border-bottom: 1px solid #333;
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        color: #aaa;
+        margin-top: 8px;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 1100px;
+        margin: 30px auto;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        width: 100%;
+        padding: 17px;
+        border: 1px solid #444;
+        border-radius: 8px;
+        background: #1b1b1b;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    button:hover {
+        background: #292929;
+        border-color: #777;
+    }
+
+    .principal {
+        background: #fff;
+        color: #000;
+        border-color: #fff;
+    }
+
+    .principal:hover {
+        background: #ddd;
+    }
+
+    .status {
+        background: #151515;
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .status h2 {
+        margin-bottom: 10px;
+    }
+
+    .status p {
+        color: #bbb;
+        line-height: 1.5;
+    }
+
+    #resultado {
+        display: none;
+    }
+
+    .resumo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .numero {
+        background: #151515;
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .numero small {
+        display: block;
+        color: #999;
+        margin-bottom: 8px;
+    }
+
+    .numero strong {
+        font-size: 25px;
+    }
+
+    .candidato {
+        background: #151515;
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 12px;
+    }
+
+    .topo-candidato {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nome {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .partido {
+        color: #999;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .votos {
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .votos strong {
+        font-size: 21px;
+    }
+
+    .barra {
+        height: 8px;
+        background: #292929;
+        border-radius: 20px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+
+    .barra div {
+        height: 100%;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    .detalhes {
+        margin-top: 12px;
+        color: #aaa;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .erro {
+        color: #ff7070;
+        white-space: pre-wrap;
+    }
+
+    .explicacao {
+        background: #111;
+        border-left: 3px solid #777;
+        padding: 18px;
+        margin-top: 25px;
+        color: #aaa;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+        .topo-candidato {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .votos {
+            text-align: left;
+        }
+    }
 </style>
 </head>
 
 <body>
-<main>
-<div class="box">
-    <h1>POLITICAL SIMULATOR</h1>
-    <p style="text-align:center">Painel principal do mundo simulado</p>
 
-    <button class="primary" onclick="irParaLicitante()">IR PARA LICITANTE</button>
-    <button class="secondary" onclick="simularVotacao()">SIMULAR VOTAÇÃO</button>
-</div>
+<header>
+    <h1>SUMMUS</h1>
+    <p>Simulação do estado atual da eleição</p>
+</header>
 
-<div class="box" id="resultado">
-    <h2>📊 Votação neste momento</h2>
-    <p id="resumo"></p>
-    <div id="ranking"></div>
-    <div class="card">
-        <b>Como a simulação funciona</b>
-        <p class="muted">
-        Os interesses de jovens, adultos e idosos de cada cidade são comparados
-        com as ações registradas nas campanhas. O resultado representa a intenção
-        de voto no estado atual do mundo, antes de uma eleição real.
+<div class="container">
+
+    <div class="menu">
+
+        <button onclick="irParaLicitante()">
+            IR PARA LICITANTE
+        </button>
+
+        <button class="principal" onclick="simularVotacao()">
+            SIMULAR VOTAÇÃO
+        </button>
+
+    </div>
+
+    <div class="status">
+        <h2 id="tituloStatus">Sistema pronto</h2>
+        <p id="textoStatus">
+            A simulação utiliza os interesses das populações das cidades
+            e as ações registradas em Campanha.json.
         </p>
     </div>
+
+    <div id="resultado"></div>
+
 </div>
-</main>
 
 <script>
-function irParaLicitante(){
-    window.location.href="Licitante.html";
+
+/* =========================================================
+   CONFIGURAÇÃO
+========================================================= */
+
+const ARQUIVOS = {
+    estados: "Estados.json",
+    candidatos: "Registro.json",
+    campanhas: "Campanha.json"
+};
+
+
+/* =========================================================
+   NAVEGAÇÃO
+========================================================= */
+
+function irParaLicitante() {
+    window.location.href = "Licitante.html";
 }
 
-async function carregarJSON(nome){
-    const resposta=await fetch(nome);
-    if(!resposta.ok) throw new Error(nome+" não encontrado.");
+
+/* =========================================================
+   CARREGAR JSON
+========================================================= */
+
+async function carregarJSON(arquivo) {
+
+    const resposta = await fetch(arquivo + "?v=" + Date.now());
+
+    if (!resposta.ok) {
+        throw new Error(
+            "Não foi possível carregar " + arquivo +
+            " (" + resposta.status + ")"
+        );
+    }
+
     return await resposta.json();
 }
 
-function normalizarObjetivo(obj){
-    return String(obj||"").trim().toLowerCase();
+
+/* =========================================================
+   NORMALIZA TEXTO
+========================================================= */
+
+function normalizar(valor) {
+
+    if (valor === undefined || valor === null) {
+        return "";
+    }
+
+    return String(valor)
+        .trim()
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
 }
 
-function pontuarGrupo(interesses, candidatoMatricula, cidade, campanhas){
-    let pontos=0;
 
-    const acoes=campanhas.filter(c =>
-        String(c.candidato)===String(candidatoMatricula) &&
-        String(c.cidade).toLowerCase()===String(cidade).toLowerCase()
-    );
+/* =========================================================
+   TRANSFORMA QUALQUER FORMATO DE JSON EM ARRAY
+========================================================= */
 
-    interesses.forEach(interesse=>{
-        const alvo=normalizarObjetivo(interesse);
-        acoes.forEach(acao=>{
-            (acao.objetivos||[]).forEach(obj=>{
-                const o=normalizarObjetivo(obj);
-                if(o===alvo) pontos+=1;
-                if(o===("-"+alvo.replace(/^[-+]/,""))) pontos-=1;
+function transformarEmArray(dados) {
+
+    if (Array.isArray(dados)) {
+        return dados;
+    }
+
+    if (!dados || typeof dados !== "object") {
+        return [];
+    }
+
+    /*
+       Aceita estruturas como:
+
+       {
+          "candidatos": [...]
+       }
+
+       {
+          "campanhas": [...]
+       }
+
+       {
+          "estados": [...]
+       }
+    */
+
+    const possiveis = [
+        "candidatos",
+        "candidato",
+        "registros",
+        "registro",
+        "campanhas",
+        "campanha",
+        "estados",
+        "estado",
+        "contas",
+        "cidades"
+    ];
+
+    for (const chave of possiveis) {
+
+        if (Array.isArray(dados[chave])) {
+            return dados[chave];
+        }
+
+    }
+
+    /*
+       Caso o JSON seja um objeto cujas chaves são IDs.
+    */
+
+    const valores = Object.values(dados);
+
+    if (
+        valores.length > 0 &&
+        valores.every(item => typeof item === "object")
+    ) {
+        return valores;
+    }
+
+    return [];
+}
+
+
+/* =========================================================
+   OBJETIVOS / INTERESSES
+========================================================= */
+
+function extrairObjetivos(grupo) {
+
+    if (!grupo || typeof grupo !== "object") {
+        return [];
+    }
+
+    /*
+       O modelo pode usar:
+
+       objetivos: [...]
+       interesses: [...]
+    */
+
+    let objetivos =
+        grupo.objetivos ??
+        grupo.interesses ??
+        grupo.interesses_do_grupo ??
+        [];
+
+    if (!Array.isArray(objetivos)) {
+        objetivos = [objetivos];
+    }
+
+    return objetivos
+        .filter(Boolean)
+        .map(item => String(item).trim())
+        .filter(Boolean);
+}
+
+
+/* =========================================================
+   POPULAÇÃO
+========================================================= */
+
+function extrairPopulacao(grupo) {
+
+    if (!grupo || typeof grupo !== "object") {
+        return 0;
+    }
+
+    const possiveis = [
+        grupo.populacao,
+        grupo.população,
+        grupo.quantidade,
+        grupo.eleitores,
+        grupo.votantes
+    ];
+
+    for (const valor of possiveis) {
+
+        const numero = Number(valor);
+
+        if (Number.isFinite(numero) && numero > 0) {
+            return numero;
+        }
+
+    }
+
+    return 0;
+}
+
+
+/* =========================================================
+   CIDADES
+========================================================= */
+
+function extrairCidades(estadosJSON) {
+
+    const cidades = [];
+
+    const estados = transformarEmArray(estadosJSON);
+
+    /*
+       Caso Estados.json seja:
+
+       [
+         {
+           estado: "Texas",
+           cidades: [...]
+         }
+       ]
+    */
+
+    for (const estado of estados) {
+
+        if (!estado || typeof estado !== "object") {
+            continue;
+        }
+
+        const nomeEstado =
+            estado.estado ??
+            estado.nome ??
+            estado.state ??
+            "";
+
+        let listaCidades =
+            estado.cidades ??
+            estado.citys ??
+            [];
+
+        if (!Array.isArray(listaCidades)) {
+            listaCidades = [];
+        }
+
+        for (const cidade of listaCidades) {
+
+            if (!cidade || typeof cidade !== "object") {
+                continue;
+            }
+
+            const nomeCidade =
+                cidade.cidade ??
+                cidade.nome ??
+                cidade.city ??
+                "";
+
+            if (!nomeCidade) {
+                continue;
+            }
+
+            cidades.push({
+                nome: nomeCidade,
+                estado: nomeEstado,
+                dados: cidade
             });
+        }
+    }
+
+    /*
+       Também aceita caso Estados.json tenha
+       uma lista direta de cidades.
+    */
+
+    if (cidades.length === 0) {
+
+        for (const cidade of estados) {
+
+            if (!cidade || typeof cidade !== "object") {
+                continue;
+            }
+
+            const nome =
+                cidade.cidade ??
+                cidade.nome ??
+                cidade.city;
+
+            if (
+                nome &&
+                (
+                    cidade.jovens ||
+                    cidade.adultos ||
+                    cidade.idosos
+                )
+            ) {
+
+                cidades.push({
+                    nome,
+                    estado:
+                        cidade.estado ??
+                        cidade.state ??
+                        "",
+                    dados: cidade
+                });
+
+            }
+        }
+    }
+
+    return cidades;
+}
+
+
+/* =========================================================
+   GRUPOS DA CIDADE
+========================================================= */
+
+function extrairGrupos(cidade) {
+
+    const dados = cidade.dados;
+
+    const grupos = [];
+
+    /*
+       ESTE É O PONTO PRINCIPAL DA CORREÇÃO.
+
+       Os grupos estão diretamente dentro da cidade:
+
+       cidade.jovens
+       cidade.adultos
+       cidade.idosos
+
+       Não estamos mais procurando cidade.grupos.
+    */
+
+    const nomes = [
+        "jovens",
+        "adultos",
+        "idosos"
+    ];
+
+    for (const nome of nomes) {
+
+        if (
+            dados[nome] &&
+            typeof dados[nome] === "object"
+        ) {
+
+            grupos.push({
+                nome,
+                dados: dados[nome]
+            });
+
+        }
+
+    }
+
+    return grupos;
+}
+
+
+/* =========================================================
+   CANDIDATOS
+========================================================= */
+
+function extrairCandidatos(registroJSON) {
+
+    const registros = transformarEmArray(registroJSON);
+
+    return registros
+        .filter(pessoa => pessoa && typeof pessoa === "object")
+        .filter(pessoa => {
+
+            return (
+                pessoa.matricula ||
+                pessoa.matrícula ||
+                pessoa.nome ||
+                pessoa.Nome
+            );
+
+        })
+        .map(pessoa => {
+
+            const matricula =
+                pessoa.matricula ??
+                pessoa.matrícula ??
+                "";
+
+            const nome =
+                pessoa.nome ??
+                pessoa.Nome ??
+                pessoa.nome_completo ??
+                pessoa["nome completo"] ??
+                "Candidato sem nome";
+
+            const partido =
+                pessoa.partido ??
+                pessoa.Partido ??
+                "Sem partido";
+
+            return {
+                matricula: String(matricula),
+                nome: String(nome),
+                partido: String(partido),
+                dados: pessoa,
+                votos: 0,
+                pontos: 0,
+                gruposVencidos: 0,
+                cidadesVencidas: 0
+            };
+
         });
-    });
+}
+
+
+/* =========================================================
+   CAMPANHAS
+========================================================= */
+
+function extrairCampanhas(campanhaJSON) {
+
+    const campanhas = transformarEmArray(campanhaJSON);
+
+    return campanhas
+        .filter(c => c && typeof c === "object")
+        .map(c => {
+
+            let objetivos =
+                c.objetivos ??
+                c.interesses ??
+                [];
+
+            if (!Array.isArray(objetivos)) {
+                objetivos = [objetivos];
+            }
+
+            return {
+                id: c.id ?? "",
+                candidato:
+                    c.candidato ??
+                    c.matricula ??
+                    c.matrícula ??
+                    "",
+                cidade:
+                    c.cidade ??
+                    c.city ??
+                    "",
+                estado:
+                    c.estado ??
+                    c.state ??
+                    "",
+                objetivos: objetivos
+                    .filter(Boolean)
+                    .map(x => String(x).trim())
+            };
+
+        });
+}
+
+
+/* =========================================================
+   COMPARAÇÃO DE OBJETIVOS
+========================================================= */
+
+function analisarObjetivo(interesse, campanhas) {
+
+    const interesseTexto = String(interesse).trim();
+
+    if (!interesseTexto) {
+        return 0;
+    }
+
+    /*
+       Exemplo:
+
+       interesse = +seguranca
+
+       campanha = +seguranca
+       → +1
+
+       campanha = -seguranca
+       → -1
+    */
+
+    let sinalInteresse = "+";
+    let chaveInteresse = interesseTexto;
+
+    if (
+        chaveInteresse.startsWith("+") ||
+        chaveInteresse.startsWith("-")
+    ) {
+
+        sinalInteresse = chaveInteresse.charAt(0);
+        chaveInteresse = chaveInteresse.substring(1);
+
+    }
+
+    chaveInteresse = normalizar(chaveInteresse);
+
+    let pontos = 0;
+
+    for (const campanha of campanhas) {
+
+        for (const objetivo of campanha.objetivos) {
+
+            let sinalObjetivo = "+";
+            let chaveObjetivo = objetivo;
+
+            if (
+                chaveObjetivo.startsWith("+") ||
+                chaveObjetivo.startsWith("-")
+            ) {
+
+                sinalObjetivo = chaveObjetivo.charAt(0);
+                chaveObjetivo = chaveObjetivo.substring(1);
+
+            }
+
+            chaveObjetivo = normalizar(chaveObjetivo);
+
+            if (chaveObjetivo !== chaveInteresse) {
+                continue;
+            }
+
+            /*
+               Ação positiva atende interesse positivo.
+               Ação negativa prejudica interesse positivo.
+
+               O mesmo vale para interesses negativos:
+
+               interesse -impostos
+               campanha -impostos → positivo
+               campanha +impostos → negativo
+            */
+
+            if (sinalInteresse === sinalObjetivo) {
+                pontos += 1;
+            } else {
+                pontos -= 1;
+            }
+
+        }
+
+    }
 
     return pontos;
 }
 
-async function simularVotacao(){
-    const resultado=document.getElementById("resultado");
-    const resumo=document.getElementById("resumo");
-    const ranking=document.getElementById("ranking");
 
-    resultado.style.display="block";
-    resumo.textContent="Calculando...";
-    ranking.innerHTML="";
+/* =========================================================
+   CAMPANHAS DO CANDIDATO NA CIDADE
+========================================================= */
 
-    try{
-        const [estados,registro,campanhas]=await Promise.all([
-            carregarJSON("Estados.json"),
-            carregarJSON("Registro.json"),
-            carregarJSON("Campanha.json")
+function campanhasDoCandidatoNaCidade(
+    candidato,
+    cidade,
+    campanhas
+) {
+
+    return campanhas.filter(campanha => {
+
+        if (
+            String(campanha.candidato) !==
+            String(candidato.matricula)
+        ) {
+            return false;
+        }
+
+        const cidadeCampanha =
+            normalizar(campanha.cidade);
+
+        const cidadeAtual =
+            normalizar(cidade.nome);
+
+        /*
+           Se a campanha tem cidade,
+           ela precisa coincidir com a cidade.
+
+           Caso não tenha cidade, não é considerada
+           uma ação local.
+        */
+
+        if (
+            cidadeCampanha &&
+            cidadeCampanha === cidadeAtual
+        ) {
+            return true;
+        }
+
+        return false;
+    });
+}
+
+
+/* =========================================================
+   SIMULAÇÃO
+========================================================= */
+
+async function simularVotacao() {
+
+    const titulo = document.getElementById("tituloStatus");
+    const texto = document.getElementById("textoStatus");
+    const resultado = document.getElementById("resultado");
+
+    resultado.style.display = "none";
+    resultado.innerHTML = "";
+
+    titulo.textContent = "Simulando eleição...";
+    texto.textContent =
+        "Carregando estados, candidatos e campanhas.";
+
+    try {
+
+        /*
+           CARREGA OS TRÊS ARQUIVOS
+        */
+
+        const [
+            estadosJSON,
+            registroJSON,
+            campanhaJSON
+        ] = await Promise.all([
+
+            carregarJSON(ARQUIVOS.estados),
+            carregarJSON(ARQUIVOS.candidatos),
+            carregarJSON(ARQUIVOS.campanhas)
+
         ]);
 
-        const pessoas=registro.registros||registro.pessoas||[];
-        const listaCampanhas=campanhas.campanhas||campanhas.registros||campanhas||[];
 
-        if(!pessoas.length){
-            throw new Error("Nenhum candidato encontrado no Registro.json.");
+        /*
+           INTERPRETA OS DADOS
+        */
+
+        const cidades =
+            extrairCidades(estadosJSON);
+
+        const candidatos =
+            extrairCandidatos(registroJSON);
+
+        const campanhas =
+            extrairCampanhas(campanhaJSON);
+
+
+        /*
+           VALIDAÇÃO
+        */
+
+        if (cidades.length === 0) {
+            throw new Error(
+                "Nenhuma cidade foi encontrada em Estados.json."
+            );
         }
 
-        if(!listaCampanhas.length){
-            throw new Error("Nenhuma campanha encontrada no Campanha.json.");
+        if (candidatos.length === 0) {
+            throw new Error(
+                "Nenhum candidato foi encontrado em Registro.json."
+            );
         }
 
-        const cidades=[];
-        (estados.estados||[]).forEach(estado=>{
-            (estado.cidades||[]).forEach(cidade=>{
-                cidades.push({
-                    nome:cidade.nome,
-                    estado:estado.nome,
-                    grupos:cidade.grupos||{}
-                });
-            });
-        });
 
-        const candidatos=pessoas.filter(p=>p.matricula && p.partido);
+        /*
+           RESET
+        */
 
-        if(!candidatos.length){
-            throw new Error("Nenhum candidato com matrícula e partido foi encontrado.");
+        for (const candidato of candidatos) {
+
+            candidato.votos = 0;
+            candidato.pontos = 0;
+            candidato.gruposVencidos = 0;
+            candidato.cidadesVencidas = 0;
+
         }
 
-        const totais={};
 
-        candidatos.forEach(c=>{
-            totais[c.matricula]={
-                nome:c.nome||c.nome_completo||c.matricula,
-                votos:0
-            };
-        });
+        /*
+           CONTADORES
+        */
 
-        let eleitoresConsiderados=0;
+        let eleitoresProcessados = 0;
+        let gruposProcessados = 0;
+        let cidadesComVoto = 0;
 
-        cidades.forEach(cidade=>{
-            const grupos=cidade.grupos||{};
 
-            Object.keys(grupos).forEach(nomeGrupo=>{
-                const grupo=grupos[nomeGrupo];
-                const populacao=Number(grupo.populacao||grupo.population||0);
-                const interesses=grupo.objetivos||grupo.interesses||[];
+        /*
+           =====================================================
+           ELEIÇÃO
+           =====================================================
 
-                if(populacao<=0 || !interesses.length) return;
+           CIDADE
+             ↓
+           JOVENS
+             ↓
+           INTERESSES
+             ↓
+           CANDIDATOS
+             ↓
+           PONTOS
+             ↓
+           VOTOS
 
-                const pontos=candidatos.map(c=>({
-                    candidato:c,
-                    pontos:pontuarGrupo(interesses,c.matricula,c.nome||cidade.nome,listaCampanhas)
-                }));
+           E depois:
 
-                const max=Math.max(...pontos.map(x=>x.pontos));
+           ADULTOS
+           IDOSOS
+        */
 
-                if(max<=0){
-                    eleitoresConsiderados+=populacao;
-                    return;
+        for (const cidade of cidades) {
+
+            const grupos =
+                extrairGrupos(cidade);
+
+            let cidadeTeveVoto = false;
+
+
+            for (const grupo of grupos) {
+
+                const populacao =
+                    extrairPopulacao(grupo.dados);
+
+                const interesses =
+                    extrairObjetivos(grupo.dados);
+
+                if (populacao <= 0) {
+                    continue;
                 }
 
-                const vencedores=pontos.filter(x=>x.pontos===max);
+                if (interesses.length === 0) {
+                    continue;
+                }
 
-                vencedores.forEach(x=>{
-                    totais[x.candidato.matricula].votos+=populacao/vencedores.length;
-                });
 
-                eleitoresConsiderados+=populacao;
-            });
-        });
+                gruposProcessados++;
 
-        const lista=Object.values(totais).sort((a,b)=>b.votos-a.votos);
-        const totalVotos=lista.reduce((s,x)=>s+x.votos,0);
+                eleitoresProcessados += populacao;
 
-        if(totalVotos===0){
-            resumo.innerHTML='<span class="erro">Nenhum candidato recebeu votos nesta simulação. Verifique as cidades, interesses e ações em Campanha.json.</span>';
-            return;
+
+                /*
+                   Cada candidato recebe uma pontuação
+                   de acordo com os interesses daquele grupo.
+                */
+
+                const pontuacoes = [];
+
+
+                for (const candidato of candidatos) {
+
+                    const campanhasCidade =
+                        campanhasDoCandidatoNaCidade(
+                            candidato,
+                            cidade,
+                            campanhas
+                        );
+
+                    let pontos = 0;
+
+                    for (const interesse of interesses) {
+
+                        pontos += analisarObjetivo(
+                            interesse,
+                            campanhasCidade
+                        );
+
+                    }
+
+                    pontuacoes.push({
+                        candidato,
+                        pontos
+                    });
+
+                }
+
+
+                /*
+                   Descobre a maior pontuação.
+                */
+
+                const maiorPontuacao =
+                    Math.max(
+                        ...pontuacoes.map(
+                            item => item.pontos
+                        )
+                    );
+
+
+                /*
+                   IMPORTANTE:
+
+                   Se TODOS tiverem 0 ou pontuação negativa,
+                   o grupo ainda precisa votar.
+
+                   No modelo atual, o voto vai para o candidato
+                   mais compatível com os interesses.
+
+                   Isso evita o problema anterior:
+
+                   "nenhum candidato recebeu votos".
+
+                   Agora sempre existe uma escolha entre os
+                   candidatos disponíveis.
+                */
+
+                let vencedores =
+                    pontuacoes.filter(
+                        item =>
+                            item.pontos === maiorPontuacao
+                    );
+
+
+                /*
+                   Se houver empate, divide os votos.
+                */
+
+                if (vencedores.length === 0) {
+                    continue;
+                }
+
+
+                const votosPorCandidato =
+                    populacao / vencedores.length;
+
+
+                for (const vencedor of vencedores) {
+
+                    vencedor.candidato.votos +=
+                        votosPorCandidato;
+
+                    vencedor.candidato.pontos +=
+                        vencedor.pontos;
+
+                    vencedor.candidato.gruposVencidos++;
+
+                    cidadeTeveVoto = true;
+
+                }
+
+            }
+
+
+            if (cidadeTeveVoto) {
+                cidadesComVoto++;
+            }
+
         }
 
-        resumo.textContent=
-            "Intenção de voto calculada a partir do estado atual dos dados. "+
-            "Eleitores considerados: "+Math.round(eleitoresConsiderados).toLocaleString("pt-BR");
 
-        lista.forEach((c,i)=>{
-            const percentual=(c.votos/totalVotos)*100;
-            const div=document.createElement("div");
-            div.className="card";
-            div.innerHTML=
-                '<div class="row"><b>#'+(i+1)+" "+c.nome+
-                '</b><span class="badge">'+percentual.toFixed(2)+'%</span></div>'+
-                '<div class="big">'+Math.round(c.votos).toLocaleString("pt-BR")+
-                ' votos estimados</div>';
-            ranking.appendChild(div);
-        });
+        /*
+           =====================================================
+           ORDENAÇÃO
+           =====================================================
+        */
 
-    }catch(e){
-        resumo.innerHTML='<span class="erro">'+e.message+'</span>';
+        candidatos.sort(
+            (a, b) => b.votos - a.votos
+        );
+
+
+        const totalVotos =
+            candidatos.reduce(
+                (total, candidato) =>
+                    total + candidato.votos,
+                0
+            );
+
+
+        /*
+           =====================================================
+           EXIBIÇÃO
+           =====================================================
+        */
+
+        titulo.textContent =
+            "Resultado da simulação";
+
+        texto.textContent =
+            "Esta é a intenção de voto calculada a partir " +
+            "dos interesses das populações e das ações " +
+            "registradas dos candidatos.";
+
+        resultado.style.display = "block";
+
+
+        let html = "";
+
+        html += `
+            <div class="resumo">
+
+                <div class="numero">
+                    <small>Cidades analisadas</small>
+                    <strong>${cidades.length}</strong>
+                </div>
+
+                <div class="numero">
+                    <small>Cidades com voto</small>
+                    <strong>${cidadesComVoto}</strong>
+                </div>
+
+                <div class="numero">
+                    <small>Grupos analisados</small>
+                    <strong>${gruposProcessados}</strong>
+                </div>
+
+                <div class="numero">
+                    <small>Eleitores simulados</small>
+                    <strong>${formatarNumero(eleitoresProcessados)}</strong>
+                </div>
+
+                <div class="numero">
+                    <small>Candidatos</small>
+                    <strong>${candidatos.length}</strong>
+                </div>
+
+            </div>
+        `;
+
+
+        /*
+           RESULTADO DOS CANDIDATOS
+        */
+
+        if (totalVotos <= 0) {
+
+            html += `
+                <div class="status">
+                    <h2>Nenhum voto calculado</h2>
+                    <p class="erro">
+                        Os arquivos foram carregados, mas não
+                        foi possível transformar os grupos
+                        populacionais em votos.
+                    </p>
+                </div>
+            `;
+
+        } else {
+
+            for (
+                let i = 0;
+                i < candidatos.length;
+                i++
+            ) {
+
+                const candidato =
+                    candidatos[i];
+
+                const percentual =
+                    (candidato.votos / totalVotos) * 100;
+
+                html += `
+                    <div class="candidato">
+
+                        <div class="topo-candidato">
+
+                            <div>
+
+                                <div class="nome">
+                                    ${i + 1}º —
+                                    ${escaparHTML(candidato.nome)}
+                                </div>
+
+                                <div class="partido">
+                                    Partido:
+                                    ${escaparHTML(candidato.partido)}
+                                    <br>
+                                    Matrícula:
+                                    ${escaparHTML(candidato.matricula)}
+                                </div>
+
+                            </div>
+
+                            <div class="votos">
+
+                                <strong>
+                                    ${formatarNumero(candidato.votos)}
+                                </strong>
+
+                                <br>
+
+                                ${percentual.toFixed(2)}%
+
+                            </div>
+
+                        </div>
+
+                        <div class="barra">
+                            <div
+                                style="width:${percentual}%">
+                            </div>
+                        </div>
+
+                        <div class="detalhes">
+
+                            Compatibilidade acumulada:
+                            ${candidato.pontos} pontos
+
+                            <br>
+
+                            Grupos vencidos:
+                            ${candidato.gruposVencidos}
+
+                        </div>
+
+                    </div>
+                `;
+
+            }
+
+        }
+
+
+        html += `
+            <div class="explicacao">
+
+                <strong>Como o voto foi calculado?</strong>
+
+                <br><br>
+
+                Cada cidade possui três grupos:
+                <strong>jovens, adultos e idosos</strong>.
+
+                <br><br>
+
+                Cada grupo possui três interesses.
+                O sistema compara esses interesses com
+                as ações registradas em
+                <strong>Campanha.json</strong>.
+
+                <br><br>
+
+                Quando uma ação corresponde ao interesse:
+
+                <br>
+
+                <strong>+interesse + ação correspondente = +1</strong>
+
+                <br>
+
+                <strong>+interesse + ação contrária = -1</strong>
+
+                <br><br>
+
+                O candidato com maior compatibilidade
+                recebe os eleitores daquele grupo.
+
+                Em caso de empate, os votos são divididos.
+
+                <br><br>
+
+                Portanto, o voto não está sendo escolhido
+                aleatoriamente: ele é consequência dos
+                interesses existentes nas cidades e das
+                ações registradas dos candidatos.
+
+            </div>
+        `;
+
+
+        resultado.innerHTML = html;
+
+
+    } catch (erro) {
+
+        console.error(erro);
+
+        titulo.textContent =
+            "Erro na simulação";
+
+        texto.innerHTML =
+            `<span class="erro">${escaparHTML(
+                erro.message
+            )}</span>`;
+
+        resultado.style.display = "block";
+
+        resultado.innerHTML = `
+            <div class="status">
+                <h2>Não foi possível realizar a eleição</h2>
+
+                <p class="erro">
+                    ${escaparHTML(erro.message)}
+                </p>
+
+                <br>
+
+                <p>
+                    Verifique se Estados.json,
+                    Registro.json e Campanha.json
+                    estão na mesma pasta deste index.html.
+                </p>
+            </div>
+        `;
+
     }
+
+}
+
+
+/* =========================================================
+   FORMATAÇÃO
+========================================================= */
+
+function formatarNumero(numero) {
+
+    return Math.round(Number(numero) || 0)
+        .toLocaleString("pt-BR");
+
+}
+
+
+function escaparHTML(texto) {
+
+    return String(texto ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
 }
 
 </script>
+
 </body>
 </html>
