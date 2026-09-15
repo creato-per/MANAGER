@@ -1,58 +1,39 @@
 {
   "programas": [
     {
-      "id": "PROG_001",
-      "canal": "TV_001",
-      "titulo": "Jornal Nacional",
-      "inicio": "08:00",
-      "fim": "12:00",
-      "posts": [
-        {
-          "id": "POST_001",
-          "horario": "08:30",
-          "categoria": "Política",
-          "titulo": "Congresso inicia nova sessão nesta manhã",
-          "resumo": "Deputados e senadores se reúnem para discutir novas propostas legislativas.",
-          "texto": "O Congresso Nacional iniciou uma nova sessão nesta manhã. Entre os assuntos previstos estão mudanças na segurança pública, investimentos em infraestrutura e revisão de impostos.",
-          "autor": "Redação NEWS 24"
-        },
-        {
-          "id": "POST_002",
-          "horario": "10:15",
-          "categoria": "Economia",
-          "titulo": "Mercado acompanha anúncio sobre juros",
-          "resumo": "Investidores aguardam novas informações sobre a política econômica.",
-          "texto": "O mercado financeiro acompanha as movimentações do governo e aguarda informações sobre os próximos passos da política de juros. Analistas avaliam possíveis impactos sobre o consumo e os investimentos.",
-          "autor": "Redação NEWS 24"
-        }
-      ]
+      "id": "PROG_401",
+      "tipo": "filme",
+      "titulo": "O Último Presidente",
+      "img_url": "https://exemplo.com/imagens/ultimo-presidente.jpg",
+      "texto": "Um thriller político ambientado em uma América dividida após uma eleição histórica."
     },
     {
-      "id": "PROG_002",
-      "canal": "TV_002",
-      "titulo": "Capital em Foco",
-      "inicio": "08:00",
-      "fim": "12:00",
-      "posts": [
-        {
-          "id": "POST_003",
-          "horario": "09:00",
-          "categoria": "Governo",
-          "titulo": "Presidente anuncia novo pacote de investimentos",
-          "resumo": "O governo apresentou medidas voltadas à infraestrutura e à geração de empregos.",
-          "texto": "Durante pronunciamento oficial, o presidente anunciou um novo pacote de investimentos. O programa prevê obras públicas, incentivos para empresas e ações para ampliar a geração de empregos.",
-          "autor": "Redação CAPITAL NEWS"
-        },
-        {
-          "id": "POST_004",
-          "horario": "11:20",
-          "categoria": "Cidades",
-          "titulo": "Estados apresentam prioridades para o próximo trimestre",
-          "resumo": "Governadores discutem transporte, saúde e segurança durante reunião.",
-          "texto": "Representantes dos estados apresentaram suas principais prioridades para o próximo trimestre. Entre os temas discutidos estão transporte público, saúde, segurança e equilíbrio das contas estaduais.",
-          "autor": "Redação CAPITAL NEWS"
-        }
-      ]
+      "id": "PROG_402",
+      "tipo": "serie",
+      "titulo": "Washington",
+      "img_url": "https://exemplo.com/imagens/washington.jpg",
+      "texto": "Uma série dramática sobre os bastidores do poder, disputas partidárias e decisões que mudam o país."
+    },
+    {
+      "id": "PROG_403",
+      "tipo": "jornal",
+      "titulo": "NEWS 24",
+      "img_url": "https://exemplo.com/imagens/news24.jpg",
+      "texto": "As principais notícias do país, com cobertura de política, economia, cidades e acontecimentos internacionais."
+    },
+    {
+      "id": "PROG_101",
+      "tipo": "documentario",
+      "titulo": "A História da América",
+      "img_url": "https://exemplo.com/imagens/historia-america.jpg",
+      "texto": "Uma viagem pelos principais acontecimentos que moldaram os Estados Unidos."
+    },
+    {
+      "id": "PROG_102",
+      "tipo": "entretenimento",
+      "titulo": "Capital Show",
+      "img_url": "https://exemplo.com/imagens/capital-show.jpg",
+      "texto": "Entrevistas, cultura, celebridades e os assuntos mais comentados do momento."
     }
   ]
 }
