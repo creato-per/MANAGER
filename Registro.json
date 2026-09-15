@@ -8,7 +8,7 @@
       "cidade": "Houston",
       "idade": 52,
       "ocupacao": "Empresário",
-      "partido": "PARTY_001",
+      "partido": "DP",
       "cargos": [
         "2x Deputado",
         "2x Presidente"
@@ -22,7 +22,7 @@
       "cidade": "Austin",
       "idade": 41,
       "ocupacao": "Advogada",
-      "partido": "PARTY_002",
+      "partido": "RP",
       "cargos": [
         "1x Deputada"
       ],
@@ -35,7 +35,7 @@
       "cidade": "Chicago",
       "idade": 36,
       "ocupacao": "Professor",
-      "partido": "PARTY_003",
+      "partido": "independence",
       "cargos": [
         "1x Deputado"
       ],
