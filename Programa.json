@@ -1,101 +1,58 @@
 {
-  "observacao": "Conteúdo que a TV.html renderiza. TVs.json contém somente a grade.",
   "programas": [
     {
-      "id": "PROG_401",
-      "tipo": "filme",
-      "titulo": "The Last City",
-      "duracao": 120
-    },
-    {
-      "id": "PROG_402",
-      "tipo": "serie",
-      "titulo": "Washington",
-      "duracao": 60
-    },
-    {
-      "id": "PROG_403",
-      "tipo": "esporte",
-      "titulo": "National Football",
-      "duracao": 120
-    },
-    {
-      "id": "PROG_101",
-      "tipo": "noticia",
-      "titulo": "Candidato realiza campanha em Houston",
-      "estado": "Texas",
-      "cidade": "Houston",
-      "candidato": "1970.001-55",
-      "texto": "O candidato realizou um discurso para apoiadores em Houston e reforçou sua proposta de ampliar a segurança pública.",
-      "objetivos": [
-        "+seguranca"
-      ]
-    },
-    {
-      "id": "PROG_102",
-      "tipo": "noticia",
-      "titulo": "Candidata apresenta plano de empregos",
-      "estado": "Texas",
-      "cidade": "Austin",
-      "candidato": "1984.002-21",
-      "texto": "A candidata apresentou propostas para ampliar empregos e investimentos locais.",
-      "objetivos": [
-        "+empregos",
-        "+investimentos"
-      ]
-    },
-    {
-      "id": "PROG_201",
-      "tipo": "opiniao",
-      "titulo": "Candidato demonstra domínio sobre economia",
-      "candidato": "1970.001-55",
-      "objetivo": "empregos",
-      "avaliacao": "tem",
-      "texto": "Ao falar sobre empregos, o candidato demonstrou conhecimento dos principais problemas econômicos."
-    },
-    {
-      "id": "PROG_202",
-      "tipo": "opiniao",
-      "titulo": "Candidato demonstra pouco conhecimento sobre segurança",
-      "candidato": "1970.001-55",
-      "objetivo": "seguranca",
-      "avaliacao": "nao_tem",
-      "texto": "Ao falar sobre segurança pública, o candidato parece não demonstrar conhecimento suficiente sobre o assunto."
-    },
-    {
-      "id": "PROG_301",
-      "tipo": "sabatina",
-      "titulo": "Sabatina presidencial",
-      "candidato": "1970.001-55",
-      "perguntas": [
+      "id": "PROG_001",
+      "canal": "TV_001",
+      "titulo": "Jornal Nacional",
+      "inicio": "08:00",
+      "fim": "12:00",
+      "posts": [
         {
-          "pergunta": "Como o candidato pretende reduzir o desemprego?",
-          "resposta": "Pretendo ampliar os investimentos em infraestrutura.",
-          "objetivos": [
-            "+empregos",
-            "+infraestrutura"
-          ]
+          "id": "POST_001",
+          "horario": "08:30",
+          "categoria": "Política",
+          "titulo": "Congresso inicia nova sessão nesta manhã",
+          "resumo": "Deputados e senadores se reúnem para discutir novas propostas legislativas.",
+          "texto": "O Congresso Nacional iniciou uma nova sessão nesta manhã. Entre os assuntos previstos estão mudanças na segurança pública, investimentos em infraestrutura e revisão de impostos.",
+          "autor": "Redação NEWS 24"
         },
         {
-          "pergunta": "Como pretende financiar essa proposta?",
-          "resposta": "Através de uma revisão dos gastos públicos.",
-          "objetivos": [
-            "+governo_eficiente"
-          ]
+          "id": "POST_002",
+          "horario": "10:15",
+          "categoria": "Economia",
+          "titulo": "Mercado acompanha anúncio sobre juros",
+          "resumo": "Investidores aguardam novas informações sobre a política econômica.",
+          "texto": "O mercado financeiro acompanha as movimentações do governo e aguarda informações sobre os próximos passos da política de juros. Analistas avaliam possíveis impactos sobre o consumo e os investimentos.",
+          "autor": "Redação NEWS 24"
         }
       ]
     },
     {
-      "id": "PROG_302",
-      "tipo": "clipes",
-      "titulo": "Clipes Musicais",
-      "duracao": 60
-    },
-    {
-      "id": "PROG_303",
-      "tipo": "adulto",
-      "titulo": "Conteúdo Adulto",
-      "duracao": 60
+      "id": "PROG_002",
+      "canal": "TV_002",
+      "titulo": "Capital em Foco",
+      "inicio": "08:00",
+      "fim": "12:00",
+      "posts": [
+        {
+          "id": "POST_003",
+          "horario": "09:00",
+          "categoria": "Governo",
+          "titulo": "Presidente anuncia novo pacote de investimentos",
+          "resumo": "O governo apresentou medidas voltadas à infraestrutura e à geração de empregos.",
+          "texto": "Durante pronunciamento oficial, o presidente anunciou um novo pacote de investimentos. O programa prevê obras públicas, incentivos para empresas e ações para ampliar a geração de empregos.",
+          "autor": "Redação CAPITAL NEWS"
+        },
+        {
+          "id": "POST_004",
+          "horario": "11:20",
+          "categoria": "Cidades",
+          "titulo": "Estados apresentam prioridades para o próximo trimestre",
+          "resumo": "Governadores discutem transporte, saúde e segurança durante reunião.",
+          "texto": "Representantes dos estados apresentaram suas principais prioridades para o próximo trimestre. Entre os temas discutidos estão transporte público, saúde, segurança e equilíbrio das contas estaduais.",
+          "autor": "Redação CAPITAL NEWS"
+        }
+      ]
     }
   ]
 }
